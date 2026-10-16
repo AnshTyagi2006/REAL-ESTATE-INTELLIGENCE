@@ -93,15 +93,15 @@ Interpretation + Local Market Context
 
 ### 🏠 Platform Overview
 
-![Real Estate Intelligence Homepage](images\screenshots\home_page.png)
+![Real Estate Intelligence Homepage](images/home_page.png)
 
 ### 📊 Market Analyser
 
-![Market Analyser](images\screenshots\market_page.png)
+![Market Analyser](images/market_page.png)
 
 ### 🏘️ Property Details
 
-![Property Detail](images\screenshots\property_page.png)
+![Property Detail](images/property_page.png)
 
 ---
 
