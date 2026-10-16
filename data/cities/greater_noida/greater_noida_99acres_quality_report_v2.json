@@ -1,0 +1,77 @@
+{
+  "city": "Greater Noida",
+  "source": "99acres",
+  "source_extraction_report": "greater_noida_99acres_extraction_report_2026-09-17T08-42-27-034Z(1).json",
+  "source_raw_file": "greater_noida_99acres_raw_individual_properties_2026-09-17T08-42-27-034Z(1).json",
+  "extracted_at": "2026-09-17T08:42:27.034Z",
+  "raw_records": 94,
+  "unique_records": 94,
+  "duplicates_removed": 0,
+  "structurally_removed": 0,
+  "model_ready_records": 94,
+  "valuation_training_eligible": 92,
+  "retained_flagged_records": 2,
+  "removed_reason_counts": {},
+  "flag_counts": {
+    "extreme_ppsf_high": 1,
+    "bhk_area_mismatch": 1
+  },
+  "price_inr_stats": {
+    "min": 5900000.0,
+    "median": 13817500.0,
+    "max": 45000000.0
+  },
+  "area_sqft_stats": {
+    "min": 496.43,
+    "median": 1390.0,
+    "max": 2755.0
+  },
+  "price_per_sqft_stats": {
+    "min": 5000.0,
+    "median": 9600.5,
+    "max": 113236.0
+  },
+  "bhk_counts": {
+    "2": 26,
+    "3": 54,
+    "4": 14
+  },
+  "property_type_counts": {
+    "Residential Apartment": 94
+  },
+  "area_basis_counts": {
+    "CARPET": 51,
+    "SUPERBUILTUP": 36,
+    "BUILTUP": 7
+  },
+  "top_localities": {
+    "Techzone 4 Greater Noida West, Greater Noida": 16,
+    "Sector 16B, Greater Noida": 11,
+    "Sector 1 Greater Noida West": 8,
+    "Noida Extension": 6,
+    "Sector 16C, Greater Noida": 5,
+    "Sector 22D Yamuna Expressway, Greater Noida": 5,
+    "Sector 16, Greater Noida": 5,
+    "ETA II, Greater Noida": 5,
+    "Sector-12, Greater Noida West": 4,
+    "Sector 4, Greater Noida West": 4,
+    "Sector 10 Greater Noida West, Greater Noida": 3,
+    "Yamuna Expressway, Greater Noida": 3,
+    "Sigma 3, Greater Noida": 2,
+    "Sector Mu, Greater Noida": 2,
+    "Sector 27, Greater Noida": 2,
+    "Sigma 1, Greater Noida": 1,
+    "Surajpur, Greater Noida": 1,
+    "Sector Omicron 1, Greater Noida": 1,
+    "Sector 25 Yeida, Greater Noida": 1,
+    "Sector 36, Greater Noida": 1
+  },
+  "cleaning_rules": [
+    "Deduplicate by listing_id/PROP_ID.",
+    "Prefer explicit *_SQFT area fields over MIN/MAX_AREA_SQFT secondary-unit values.",
+    "Remove nonpositive price/area, invalid BHK (>10 or <=0), invalid coordinates, and area below 300 sqft.",
+    "Retain large/high-value properties but flag extreme area and price-per-sqft values.",
+    "Flag BHK-area mismatch for review.",
+    "Preserve carpet/built-up/super-built-up area basis for valuation normalization."
+  ]
+}

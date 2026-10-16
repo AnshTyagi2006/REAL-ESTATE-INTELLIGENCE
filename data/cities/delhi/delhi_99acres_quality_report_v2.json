@@ -1,0 +1,87 @@
+{
+  "city": "Delhi",
+  "source": "99acres",
+  "source_extraction_report": "delhi_99acres_extraction_report_2026-09-17T08-40-12-807Z(3).json",
+  "source_raw_file": "delhi_99acres_raw_individual_properties_2026-09-17T08-40-12-807Z(3).json",
+  "extracted_at": "2026-09-17T08:40:12.806Z",
+  "raw_records": 1651,
+  "unique_records": 1651,
+  "duplicates_removed": 0,
+  "structurally_removed": 316,
+  "model_ready_records": 1335,
+  "valuation_training_eligible": 842,
+  "retained_flagged_records": 493,
+  "removed_reason_counts": {
+    "area_below_300": 99856
+  },
+  "flag_counts": {
+    "extreme_ppsf_high": 449,
+    "bhk_area_mismatch": 256,
+    "extreme_area_high": 51
+  },
+  "price_inr_stats": {
+    "min": 1900000.0,
+    "median": 47200000.0,
+    "max": 700000000.0
+  },
+  "area_sqft_stats": {
+    "min": 300.0,
+    "median": 1622.0,
+    "max": 48600.00000000486
+  },
+  "price_per_sqft_stats": {
+    "min": 1400.0,
+    "median": 27369.0,
+    "max": 771276.0
+  },
+  "bhk_counts": {
+    "1": 12,
+    "2": 88,
+    "3": 518,
+    "4": 697,
+    "5": 18,
+    "6": 2
+  },
+  "property_type_counts": {
+    "Residential Apartment": 426,
+    "Builder Floor": 1124,
+    "Triplex Builder Floor": 35,
+    "Duplex Builder Floor": 65,
+    "Duplex Residential Apartment": 1
+  },
+  "area_basis_counts": {
+    "CARPET": 852,
+    "SUPER": 359,
+    "SUPERBUILTUP": 75,
+    "BUILTUP": 49
+  },
+  "top_localities": {
+    "Vasant Vihar, Delhi": 68,
+    "Greater Kailash 2, Delhi": 58,
+    "Safdarjung Enclave, Delhi": 50,
+    "Greater Kailash 1, Delhi": 50,
+    "Chattarpur, South Delhi": 38,
+    "Moti Nagar, Delhi": 38,
+    "Green Park, Delhi": 38,
+    "Sector 10 Dwarka, Delhi": 33,
+    "Sector 6 Dwarka, Delhi": 29,
+    "Anand Niketan, Delhi": 26,
+    "Sector 4 Dwarka, Delhi": 26,
+    "Sector 23 Dwarka, Delhi": 25,
+    "Sector 24 Rohini, Delhi": 24,
+    "Sector 5 Dwarka, Delhi": 24,
+    "Hauz Khas Enclave, Delhi": 21,
+    "Sector 19 Dwarka, Delhi": 19,
+    "Sector 7 Dwarka, Delhi": 19,
+    "Sector 18A Dwarka, Delhi": 19,
+    "Defence Colony, South Delhi": 19,
+    "SDA, Delhi": 19
+  },
+  "cleaning_rules": [
+    "Deduplicate by listing_id/PROP_ID.",
+    "Remove nonpositive price or area, invalid BHK (>10 or <=0), invalid coordinates, and area below 300 sqft.",
+    "Retain legitimate large/high-value properties but flag extreme area/price-per-sqft values.",
+    "Flag BHK-area mismatch for review rather than automatically deleting.",
+    "Preserve area basis; do not mix carpet, built-up and super/superbuilt-up area in valuation without explicit normalization."
+  ]
+}

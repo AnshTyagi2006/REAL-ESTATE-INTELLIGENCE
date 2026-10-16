@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Real Estate Intelligence – Market Analyzer. Explore asking prices, price-per-square-foot patterns, BHK-specific evidence and locality-level context.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Market Analyzer · Real Estate Intelligence</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/market.css">
+</head>
+<body>
+  <!-- Accessibility skip link -->
+  <a href="#main-content" class="sr-only focusable">Skip to content</a>
+
+  <!-- ========================================================================
+       Header
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="nav-shell">
+        <!-- Brand -->
+        <a href="/home" class="brand-wrap" aria-label="Real Estate Intelligence - Home">
+          <span class="brand-badge">RE</span>
+          <span class="brand-name">Real Estate Intelligence</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="/home" class="nav-item">Home</a>
+          <a href="/search" class="nav-item">Properties</a>
+          <a href="/market" class="nav-item active" aria-current="page">Market</a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="nav-actions">
+          <a href="/search" class="btn-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>Find Properties</span>
+          </a>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Switch theme">
+            <svg class="theme-icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path>
+            </svg>
+          </button>
+          
+          <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div class="mobile-dropdown" id="mobile-dropdown">
+        <a href="/home">Home</a>
+        <a href="/search">Properties</a>
+        <a href="/market" class="active">Market</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="home" aria-labelledby="hero-heading">
+    <div class="hero-gradient-overlay" aria-hidden="true"></div>
+    <div class="hero-bottom-fade" aria-hidden="true"></div>
+
+    <!-- Decorative subtle wave lines -->
+    <svg class="hero-wave-svg" viewBox="0 0 520 112" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 46 C 110 14, 250 104, 520 36" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 50 C 110 18, 250 101, 520 39" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 53 C 110 22, 250 98, 520 43" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 57 C 110 26, 250 95, 520 46" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 60 C 110 30, 250 92, 520 50" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 64 C 110 34, 250 89, 520 53" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+      <path d="M0 67 C 110 38, 250 86, 520 57" fill="none" stroke="#8fa6d9" stroke-opacity="0.28" stroke-width="0.7"></path>
+    </svg>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Market Analyzer</span>
+      <h1 class="hero-title" id="hero-heading">Understand the local property <span class="hero-title-accent">market.</span></h1>
+      <p class="hero-subtitle">Explore asking prices, price-per-square-foot patterns, BHK-specific evidence and locality-level context.</p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Main Application Grid
+       ======================================================================== -->
+  <main class="main-layout" id="main-content">
+    <div class="top-grid">
+      <!-- Sidebar Filters -->
+      <aside class="sidebar-sticky" aria-label="Market Filters">
+        <div class="card filters-card">
+          <div class="filters-header">
+            <div class="card-title-group">
+              <span class="icon-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+              </span>
+              <h2 class="card-title">Market Filters</h2>
+            </div>
+          </div>
+
+          <form class="filter-form" id="filter-form" autocomplete="off">
+            <!-- City -->
+            <div class="form-group">
+                              <label for="filter-city" class="sr-only">City</label>
+                <div class="input-shell">
+                  <svg class="input-icon-left" viewBox="0 0 24 24">
+                    <path d="M12 22.2s7.2-6.3 7.2-12.3a7.2 7.2 0 1 0-14.4 0c0 6 7.2 12.3 7.2 12.3Z" fill="#e5860a"></path>
+                    <circle cx="12" cy="9.9" r="2.7" fill="#fff"></circle>
+                  </svg>
+                  <input type="text" id="filter-city" value="" placeholder="All cities · type to search…" autocomplete="new-password" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="city-suggestions" aria-label="City">
+                  <span class="input-arrow-right" aria-hidden="true">⌄</span>
+                </div>
+                <div class="autocomplete-list" id="city-suggestions" role="listbox" aria-label="Available cities" hidden></div>
+            </div>
+
+            <!-- Locality -->
+            <div class="form-group">
+                              <label for="filter-locality" class="sr-only">Locality</label>
+                <div class="input-shell">
+                  <svg class="input-icon-left" viewBox="0 0 24 24">
+                    <path d="M12 22.2s7.2-6.3 7.2-12.3a7.2 7.2 0 1 0-14.4 0c0 6 7.2 12.3 7.2 12.3Z" fill="#e5860a"></path>
+                    <circle cx="12" cy="9.9" r="2.7" fill="#fff"></circle>
+                  </svg>
+                  <input type="text" id="filter-locality" placeholder="Type a locality…" autocomplete="new-password" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="locality-suggestions" aria-label="Locality">
+                </div>
+                <div class="autocomplete-list" id="locality-suggestions" role="listbox" aria-label="Available localities" hidden></div>
+            </div>
+
+            <!-- BHK -->
+            <div class="form-group">
+                              <label for="filter-bhk" class="sr-only">BHK</label>
+                <div class="input-shell">
+                  <svg class="input-icon-left" viewBox="0 0 24 24" fill="none" stroke="#e5860a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  <select id="filter-bhk" aria-label="BHK">
+                    <option value="" selected>All BHK</option>
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3">3 BHK</option>
+                  <option value="4">4 BHK</option>
+                  <option value="5">5 BHK</option>
+                </select>
+                <span class="input-arrow-right">▼</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn-reset" id="btn-reset">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                <path d="M16 21h5v-5"></path>
+              </svg>
+              <span>Reset</span>
+            </button>
+
+            <button type="submit" class="btn-analyze" id="btn-analyze">
+              <span>Analyze Market</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </aside>
+
+      <!-- Main Results Column -->
+      <section class="results-column" id="market-results" aria-live="polite">
+        <div id="market-status" class="market-status" hidden role="status">Loading live market data…</div>
+        <div id="market-error" class="market-error" hidden role="alert"><span id="market-error-message">Unable to load market data.</span><button type="button" id="market-retry" class="btn-reset">Try again</button></div>
+        <!-- Key Market Indicators (4 KPI Cards) -->
+        <div class="kpi-grid">
+          <!-- Card 1: Total Properties -->
+          <article class="card kpi-card">
+            <span class="icon-badge round kpi-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </span>
+            <div class="kpi-body">
+              <p class="kpi-label">Total Properties</p>
+              <p class="kpi-value" id="counter-properties">—</p>
+              <p class="kpi-sub">Indexed in this market</p>
+            </div>
+            <div class="kpi-side">
+              
+              
+              <svg class="sparkline-svg" viewBox="0 0 68 28">
+                <defs>
+                  <linearGradient id="spark-blue-1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#1d6feb"></stop>
+                    <stop offset="100%" stop-color="#4ea3ff"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M2,24 C10,21 16,23 23,17 C30,19 37,14 44,15 C51,11 59,8 66,3"
+                      fill="none" stroke="url(#spark-blue-1)" stroke-width="2.2" stroke-linecap="round" class="draw-path"></path>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Card 2: Median Price -->
+          <article class="card kpi-card">
+            <span class="icon-badge round kpi-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12"></path>
+                <path d="M6 8h12"></path>
+                <path d="m6 13 8.5 8"></path>
+                <path d="M6 13h3a4 4 0 0 0 0-8"></path>
+              </svg>
+            </span>
+            <div class="kpi-body">
+              <p class="kpi-label">Median Price</p>
+              <p class="kpi-value" id="counter-price">—</p>
+              <p class="kpi-sub">Across all properties</p>
+            </div>
+            <div class="kpi-side">
+              
+              
+              <svg class="sparkline-svg" viewBox="0 0 68 28">
+                <defs>
+                  <linearGradient id="spark-rose" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#f43f5e"></stop>
+                    <stop offset="100%" stop-color="#ff8d8d"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M2,8 C10,4 16,11 23,8 C30,14 37,11 44,18 C51,16 59,22 66,20"
+                      fill="none" stroke="url(#spark-rose)" stroke-width="2.2" stroke-linecap="round" class="draw-path"></path>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Card 3: Median ₹/sqft -->
+          <article class="card kpi-card">
+            <span class="icon-badge round kpi-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24">
+                <rect x="2.6" y="12.4" width="5" height="9" rx="1.4" fill="currentColor"></rect>
+                <rect x="9.5" y="7.2" width="5" height="14.2" rx="1.4" fill="currentColor"></rect>
+                <rect x="16.4" y="2.4" width="5" height="19" rx="1.4" fill="currentColor"></rect>
+              </svg>
+            </span>
+            <div class="kpi-body">
+              <p class="kpi-label">Median ₹/sqft</p>
+              <p class="kpi-value"><span id="counter-psf">—</span><span>/sqft</span></p>
+              <p class="kpi-sub">Median price per sq.ft</p>
+            </div>
+            <div class="kpi-side">
+              
+              
+              <svg class="sparkline-svg" viewBox="0 0 68 28">
+                <path d="M2,23 C10,19 16,21 23,16 C30,17 37,13 44,14 C51,9 59,6 66,2"
+                      fill="none" stroke="url(#spark-blue-1)" stroke-width="2.2" stroke-linecap="round" class="draw-path"></path>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Card 4: Median Area -->
+          <article class="card kpi-card">
+            <span class="icon-badge round kpi-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 3h6v6"></path>
+                <path d="M9 21H3v-6"></path>
+                <path d="M21 3l-7 7"></path>
+                <path d="M3 21l7-7"></path>
+              </svg>
+            </span>
+            <div class="kpi-body">
+              <p class="kpi-label">Median Area</p>
+              <p class="kpi-value"><span id="counter-area">—</span> <span>sqft</span></p>
+              <p class="kpi-sub">Typical property size</p>
+            </div>
+            <div class="kpi-side">
+              
+              
+              <svg class="sparkline-svg" viewBox="0 0 68 28">
+                <defs>
+                  <linearGradient id="spark-gold" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#f59e0b"></stop>
+                    <stop offset="100%" stop-color="#fcd34d"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M2,20 C10,23 16,17 23,19 C30,15 37,17 44,13 C51,11 59,13 66,7"
+                      fill="none" stroke="url(#spark-gold)" stroke-width="2.2" stroke-linecap="round" class="draw-path"></path>
+              </svg>
+            </div>
+          </article>
+        </div>
+
+        <!-- Middle Row: Price Range Analysis & BHK Market Evidence -->
+        <div class="middle-grid">
+          <!-- Price Range Analysis Panel -->
+          <article class="card price-panel" aria-labelledby="heading-price-range">
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="icon-badge">
+                  <svg width="20" height="20" viewBox="0 0 24 24">
+                    <rect x="2.6" y="12.4" width="5" height="9" rx="1.4" fill="currentColor"></rect>
+                    <rect x="9.5" y="7.2" width="5" height="14.2" rx="1.4" fill="currentColor"></rect>
+                    <rect x="16.4" y="2.4" width="5" height="19" rx="1.4" fill="currentColor"></rect>
+                  </svg>
+                </span>
+                <h2 class="card-title" id="heading-price-range">Price range analysis</h2>
+              </div>
+              <label class="select-pill">
+                <select aria-label="Metric">
+                  <option selected>Price per sq.ft.</option>
+                </select>
+              </label>
+            </div>
+
+            <!-- Stats row -->
+            <div class="price-stat-scroll thin-scroll">
+            <div class="price-stat-row">
+              <div class="median-stat-box">
+                <span class="box-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24">
+                    <rect x="2.6" y="12.4" width="5" height="9" rx="1.4" fill="currentColor"></rect>
+                    <rect x="9.5" y="7.2" width="5" height="14.2" rx="1.4" fill="currentColor"></rect>
+                    <rect x="16.4" y="2.4" width="5" height="19" rx="1.4" fill="currentColor"></rect>
+                  </svg>
+                </span>
+                <div>
+                  <p class="box-lbl">Median asking price</p>
+                  <p class="box-val" id="price-range-median-price">—</p>
+                  <p class="box-sub" id="price-range-median-ppsf">with a median —/sqft</p>
+                </div>
+              </div>
+              <div class="stat-pill blue">
+                <span class="lbl">Min</span>
+                <span class="val" id="ppsf-min">—</span>
+                <span class="unit">/sqft</span>
+              </div>
+              <div class="stat-pill blue">
+                <span class="lbl">P25</span>
+                <span class="val" id="ppsf-p25">—</span>
+                <span class="unit">/sqft</span>
+              </div>
+              <div class="stat-pill amber">
+                <span class="lbl">P75</span>
+                <span class="val" id="ppsf-p75">—</span>
+                <span class="unit">/sqft</span>
+              </div>
+              <div class="stat-pill rose">
+                <span class="lbl">Max</span>
+                <span class="val" id="ppsf-max">—</span>
+                <span class="unit">/sqft</span>
+              </div>
+            </div>
+            </div>
+
+            <!-- Accurate linear price-per-square-foot range scale; populated from live API values. -->
+            <div class="density-chart-wrap thin-scroll" id="price-range-chart-wrap" aria-live="polite">
+              <div class="market-data-empty">Loading price range…</div>
+            </div>
+          </article>
+
+          <!-- BHK Market Evidence Panel -->
+          <article class="card bhk-panel" aria-labelledby="heading-bhk">
+            <div class="card-header">
+              <div class="card-title-group">
+                <span class="icon-badge">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                    <path d="M10 6h4"></path>
+                    <path d="M10 10h4"></path>
+                    <path d="M10 14h4"></path>
+                    <path d="M10 18h4"></path>
+                  </svg>
+                </span>
+                <h2 class="card-title" id="heading-bhk">BHK market evidence</h2>
+              </div>
+              <label class="select-pill">
+                <select id="bhk-select" aria-label="Filter by BHK">
+                  <option value="All BHK">All BHK</option>
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3">3 BHK</option>
+                  <option value="4">4 BHK</option>
+                  <option value="5">5 BHK</option>
+                </select>
+              </label>
+            </div>
+
+            <!-- BHK Table -->
+            <div class="thin-scroll">
+              <div class="bhk-table" role="table" aria-label="BHK Market Evidence">
+                <div class="bhk-row header" role="row">
+                  <span role="columnheader">BHK</span>
+                  <span role="columnheader">Count</span>
+                  <span role="columnheader">Median Price</span>
+                  <span role="columnheader">₹/sqft</span>
+                  <span role="columnheader" style="text-align: center;">Price range (₹/sqft)</span>
+                </div>
+
+                <!-- 1 BHK -->
+                <div class="bhk-row" role="row" data-bhk="1 BHK">
+                  <span style="font-weight: 500;">1 BHK</span>
+                  <span>3</span>
+                  <span>₹3.16 Cr</span>
+                  <span>₹26,985</span>
+                  <span style="padding-left: 4px;">
+                    <span class="range-bar-track">
+                      <span class="range-bar-fill blue" style="left: 3%; width: 48%;"></span>
+                      <span class="range-bar-dot start" style="left: 3%;"></span>
+                      <span class="range-bar-dot end" style="left: 51%;"></span>
+                    </span>
+                  </span>
+                </div>
+
+                <!-- 2 BHK -->
+                <div class="bhk-row" role="row" data-bhk="2 BHK">
+                  <span style="font-weight: 500;">2 BHK</span>
+                  <span>150</span>
+                  <span>₹1.70 Cr</span>
+                  <span>₹14,262</span>
+                  <span style="padding-left: 4px;">
+                    <span class="range-bar-track">
+                      <span class="range-bar-fill blue" style="left: 0%; width: 26%;"></span>
+                      <span class="range-bar-dot end" style="left: 26%;"></span>
+                    </span>
+                  </span>
+                </div>
+
+                <!-- 3 BHK -->
+                <div class="bhk-row" role="row" data-bhk="3 BHK">
+                  <span style="font-weight: 500;">3 BHK</span>
+                  <span>612</span>
+                  <span>₹2.75 Cr</span>
+                  <span>₹14,736</span>
+                  <span style="padding-left: 4px;">
+                    <span class="range-bar-track">
+                      <span class="range-bar-fill blue" style="left: 0%; width: 43%;"></span>
+                      <span class="range-bar-dot end" style="left: 43%;"></span>
+                    </span>
+                  </span>
+                </div>
+
+                <!-- 4 BHK -->
+                <div class="bhk-row" role="row" data-bhk="4 BHK">
+                  <span style="font-weight: 500;">4 BHK</span>
+                  <span>213</span>
+                  <span>₹4.50 Cr</span>
+                  <span>₹16,609</span>
+                  <span style="padding-left: 4px;">
+                    <span class="range-bar-track">
+                      <span class="range-bar-fill slate" style="left: 0%; width: 60%;"></span>
+                      <span class="range-bar-dot end" style="left: 60%;"></span>
+                    </span>
+                  </span>
+                </div>
+
+                <!-- 5 BHK -->
+                <div class="bhk-row" role="row" data-bhk="5 BHK">
+                  <span style="font-weight: 500;">5 BHK</span>
+                  <span>29</span>
+                  <span>₹9.00 Cr</span>
+                  <span>₹16,770</span>
+                  <span style="padding-left: 4px;">
+                    <span class="range-bar-track">
+                      <span class="range-bar-fill slate" style="left: 0%; width: 75%;"></span>
+                      <span class="range-bar-dot end" style="left: 75%;"></span>
+                    </span>
+                  </span>
+                </div>
+
+                <!-- Axis Labels -->
+                <div class="bhk-axis-row" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                  <span class="bhk-axis-labels">
+                    <span>0</span>
+                    <span>10K</span>
+                    <span>20K</span>
+                    <span>30K</span>
+                    <span>40K</span>
+                    <span>50K</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Evidence Callout Banner -->
+            <div class="bhk-callout">
+              <span class="bhk-info-icon" aria-hidden="true">i</span>
+              <div>
+                <h4 id="bhk-note-title">BHK evidence</h4>
+                <p id="bhk-note-body">2 BHK and 3 BHK properties form the largest share of listings in this market, with median prices around ₹1.70 Cr and ₹2.75 Cr respectively.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bottom Row: Top Localities & Market Distribution -->
+    <div class="bottom-grid" id="properties">
+      <!-- Top Localities Card -->
+      <article class="card localities-panel" aria-labelledby="heading-localities">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24">
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="currentColor"></path>
+                <circle cx="12" cy="9.9" r="2.7" fill="#fff"></circle>
+              </svg>
+            </span>
+            <h2 class="card-title" id="heading-localities">Top localities</h2>
+          </div>
+          <div class="tab-group" role="tablist" aria-label="Locality sorting criteria">
+                      <button type="button" class="tab-btn" id="tab-listings" role="tab" aria-selected="false">By number of listings</button>
+          <button type="button" class="tab-btn active" id="tab-psf" role="tab" aria-selected="true">By price per sq.ft.</button>
+          </div>
+        </div>
+
+        <div class="locality-price-filter">
+          <label for="locality-price-slider">Maximum median price per sq.ft.</label>
+          <output id="locality-price-value" for="locality-price-slider">₹20,000</output>
+          <input id="locality-price-slider" type="range" min="0" max="1" step="1" value="1" aria-label="Maximum locality median price per square foot">
+        </div>
+        <div class="thin-scroll">
+          <div class="locality-table" role="table" aria-label="Top Localities">
+            <div class="locality-row header" role="row">
+              <span role="columnheader">#</span>
+              <span role="columnheader">Locality</span>
+              <span role="columnheader">Price scale</span>
+              <span role="columnheader">Listings</span>
+              <span role="columnheader">Median ₹/sqft</span>
+            </div>
+            <div id="locality-rows-container">
+              <!-- Dynamically populated via script.js -->
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Market Distribution Card -->
+      <article class="card distribution-panel" aria-labelledby="heading-distribution">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="icon-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <rect x="2.6" y="12.4" width="5" height="9" rx="1.4" fill="currentColor"></rect>
+                <rect x="9.5" y="7.2" width="5" height="14.2" rx="1.4" fill="currentColor"></rect>
+                <rect x="16.4" y="2.4" width="5" height="19" rx="1.4" fill="currentColor"></rect>
+              </svg>
+            </span>
+            <h2 class="card-title" id="heading-distribution">Market distribution</h2>
+          </div>
+          <label class="select-pill">
+            <select aria-label="Distribution View">
+              <option selected>Price range (₹ Cr)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="distribution-content">
+          <!-- Donut SVG -->
+          <div class="donut-wrap">
+            <svg class="donut-svg" viewBox="0 0 300 216" role="img" aria-label="Donut chart showing market share by price range">
+              <defs>
+                <linearGradient id="seg-0" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#ffc94d"></stop>
+                  <stop offset="100%" stop-color="#d98d08"></stop>
+                </linearGradient>
+                <linearGradient id="seg-1" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#3b82f6"></stop>
+                  <stop offset="100%" stop-color="#1a46c4"></stop>
+                </linearGradient>
+                <linearGradient id="seg-2" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#5fd0ff"></stop>
+                  <stop offset="100%" stop-color="#2a96ee"></stop>
+                </linearGradient>
+                <linearGradient id="seg-3" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#b79be6"></stop>
+                  <stop offset="100%" stop-color="#8566c8"></stop>
+                </linearGradient>
+                <linearGradient id="seg-4" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#ffb347"></stop>
+                  <stop offset="100%" stop-color="#f58a10"></stop>
+                </linearGradient>
+                <linearGradient id="seg-5" x1="0.15" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#ff7b86"></stop>
+                  <stop offset="100%" stop-color="#e8445a"></stop>
+                </linearGradient>
+              </defs>
+
+              <!-- Donut Segments Group (Circumference C = 411.55) -->
+              <g transform="rotate(-90 150 108)" style="filter: drop-shadow(0 8px 10px rgba(34, 48, 110, 0.2));">
+                <!-- 0: 36.1% -->
+                <circle class="donut-segment" data-index="0" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-0)" stroke-width="37"
+                        stroke-dasharray="145.97 265.58" stroke-dashoffset="-1.3" style="transform-origin: 150px 108px;"></circle>
+                <!-- 1: 24.8% -->
+                <circle class="donut-segment" data-index="1" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-1)" stroke-width="37"
+                        stroke-dasharray="99.46 312.09" stroke-dashoffset="-149.87" style="transform-origin: 150px 108px;"></circle>
+                <!-- 2: 15.2% -->
+                <circle class="donut-segment" data-index="2" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-2)" stroke-width="37"
+                        stroke-dasharray="59.95 351.60" stroke-dashoffset="-251.93" style="transform-origin: 150px 108px;"></circle>
+                <!-- 3: 12.3% -->
+                <circle class="donut-segment" data-index="3" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-3)" stroke-width="37"
+                        stroke-dasharray="48.02 363.53" stroke-dashoffset="-314.49" style="transform-origin: 150px 108px;"></circle>
+                <!-- 4: 7.1% -->
+                <circle class="donut-segment" data-index="4" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-4)" stroke-width="37"
+                        stroke-dasharray="26.62 384.93" stroke-dashoffset="-365.11" style="transform-origin: 150px 108px;"></circle>
+                <!-- 5: 4.5% -->
+                <circle class="donut-segment" data-index="5" cx="150" cy="108" r="65.5" fill="none" stroke="url(#seg-5)" stroke-width="37"
+                        stroke-dasharray="15.92 395.63" stroke-dashoffset="-394.33" style="transform-origin: 150px 108px;"></circle>
+              </g>
+
+              <!-- Donut Center Badge -->
+              <circle cx="150" cy="108" r="47" fill="#fff" style="filter: drop-shadow(0 2px 8px rgba(30, 40, 90, 0.18));"></circle>
+              <text x="150" y="106" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a" font-family="'Newsreader', Georgia, serif" id="donut-center-val" style="pointer-events: none;">678</text>
+              <text x="150" y="124" text-anchor="middle" font-size="12" fill="#64748b" id="donut-center-sub" style="pointer-events: none;">Priced listings</text>
+
+              <!-- Percentage labels positioned at the midpoint of each donut segment -->
+              <text class="distribution-share donut-percent-label" data-index="0" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">36.14%</text>
+              <text class="distribution-share donut-percent-label" data-index="1" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">24.78%</text>
+              <text class="distribution-share donut-percent-label" data-index="2" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">15.19%</text>
+              <text class="distribution-share donut-percent-label" data-index="3" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">12.24%</text>
+              <text class="distribution-share donut-percent-label" data-index="4" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">7.08%</text>
+              <text class="distribution-share donut-percent-label" data-index="5" x="150" y="108" text-anchor="middle" dominant-baseline="central" style="pointer-events: none;">4.57%</text>
+            </svg>
+          </div>
+
+          <!-- Interactive Legend Table -->
+          <div class="distribution-legend thin-scroll">
+            <div class="legend-table" role="table" aria-label="Listings by price range">
+              <div class="legend-row header" role="row">
+                <span role="columnheader" style="padding-left: 28px;">Price range (₹ Cr)</span>
+                <span role="columnheader" style="text-align: center;">Listings</span>
+                <span role="columnheader" style="text-align: right;">Share</span>
+              </div>
+              <div class="legend-row" role="row" data-index="0">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #ffd36b, #e8940c);"></span>₹0.3 – 7.8</span>
+                <span style="text-align: center;">245</span>
+                <span class="distribution-share" data-index="0" style="text-align: right; font-weight: 500;">36.14%</span>
+              </div>
+              <div class="legend-row" role="row" data-index="1">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #5c9bff, #1f55d6);"></span>₹7.8 – 15.2</span>
+                <span style="text-align: center;">168</span>
+                <span class="distribution-share" data-index="1" style="text-align: right; font-weight: 500;">24.78%</span>
+              </div>
+              <div class="legend-row" role="row" data-index="2">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #7edcff, #2d9cf0);"></span>₹15.2 – 22.7</span>
+                <span style="text-align: center;">103</span>
+                <span class="distribution-share" data-index="2" style="text-align: right; font-weight: 500;">15.19%</span>
+              </div>
+              <div class="legend-row" role="row" data-index="3">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #c3a9ee, #8f70d0);"></span>₹22.7 – 30.1</span>
+                <span style="text-align: center;">83</span>
+                <span class="distribution-share" data-index="3" style="text-align: right; font-weight: 500;">12.24%</span>
+              </div>
+              <div class="legend-row" role="row" data-index="4">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #ffc15c, #f9930f);"></span>₹30.1 – 37.6</span>
+                <span style="text-align: center;">48</span>
+                <span class="distribution-share" data-index="4" style="text-align: right; font-weight: 500;">7.08%</span>
+              </div>
+              <div class="legend-row" role="row" data-index="5">
+                <span><span class="color-dot" style="background: linear-gradient(145deg, #ff8a93, #ec4a5d);"></span>₹37.6 – 45.0</span>
+                <span style="text-align: center;">31</span>
+                <span class="distribution-share" data-index="5" style="text-align: right; font-weight: 500;">4.57%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    © 2026 Real Estate Intelligence · Figures reflect asking prices from indexed listings and are indicative only.
+  </footer>
+
+  <script src="/js/city_localities.js"></script>
+  <script src="/js/market.js"></script>
+  <script src="/js/account.js"></script>
+</body>
+</html>

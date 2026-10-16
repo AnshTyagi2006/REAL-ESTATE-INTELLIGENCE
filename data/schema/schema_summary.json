@@ -1,0 +1,19 @@
+{
+  "input_file": "C:\\Users\\Ansh Tyagi\\Desktop\\Real Estate Intelligence Platform\\data\\combined\\real_estate_combined_raw.csv",
+  "source_column_count": 100,
+  "canonical_field_count": 60,
+  "canonical_fields_mapped": 59,
+  "canonical_fields_not_found": 1,
+  "required_fields_not_found": [
+    "property_id"
+  ],
+  "source_columns_mapped": 83,
+  "source_columns_needing_review": 17,
+  "source_classification_counts": {
+    "CANONICAL": 83,
+    "DERIVED_OR_ANALYTICAL": 7,
+    "SOURCE_METADATA": 7,
+    "UNMAPPED_REVIEW": 3
+  },
+  "note": "Schema audit only. No cleaning, imputation, deduplication, value standardization or source modification is performed."
+}

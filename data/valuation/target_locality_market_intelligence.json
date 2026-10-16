@@ -1,0 +1,62 @@
+{
+    "target_property_id": "RE-00000001",
+    "target_city": "Bangalore East",
+    "target_locality": "Budigere Cross, Bangalore",
+    "target_bedrooms": 3.0,
+    "target_ppsf": 15726.567414552317,
+    "target_vs_locality_median_pct": 12.332624389659408,
+    "locality_statistics": {
+        "property_count": 21,
+        "median_asking_price_inr": 19900000.0,
+        "mean_asking_price_inr": 22015176.19047619,
+        "p25_asking_price_inr": 17307000.0,
+        "p75_asking_price_inr": 28378000.0,
+        "median_ppsf": 14000.0,
+        "mean_ppsf": 13480.810195433874,
+        "p25_ppsf": 11990.21207177814,
+        "p75_ppsf": 14453.125,
+        "minimum_ppsf": 9838.709677419354,
+        "maximum_ppsf": 17335.766423357665,
+        "ppsf_std": 1833.5625174283325,
+        "median_area_sqft": 1528.0,
+        "mean_area_sqft": 1619.1847619047621
+    },
+    "bedroom_specific_statistics": {
+        "property_count": 13,
+        "median_asking_price_inr": 25800000.0,
+        "mean_asking_price_inr": 25316284.615384616,
+        "p25_asking_price_inr": 19900000.0,
+        "p75_asking_price_inr": 28800000.0,
+        "median_ppsf": 14135.759272218334,
+        "mean_ppsf": 14068.368548454273,
+        "p25_ppsf": 13546.300040436716,
+        "p75_ppsf": 15102.254850550604,
+        "minimum_ppsf": 11117.31843575419,
+        "maximum_ppsf": 17335.766423357665,
+        "ppsf_std": 1662.8912894775203,
+        "median_area_sqft": 1790.0,
+        "mean_area_sqft": 1805.9907692307693
+    },
+    "city_statistics": {
+        "property_count": 452,
+        "median_asking_price_inr": 16900000.0,
+        "mean_asking_price_inr": 20807980.32079646,
+        "p25_asking_price_inr": 12500000.0,
+        "p75_asking_price_inr": 25000000.0,
+        "median_ppsf": 12196.75668606552,
+        "mean_ppsf": 12775.345697450783,
+        "p25_ppsf": 10168.006494535086,
+        "p75_ppsf": 14901.858591100181,
+        "minimum_ppsf": 5194.369973190349,
+        "maximum_ppsf": 72000.0,
+        "ppsf_std": 4530.116182275568,
+        "median_area_sqft": 1387.0,
+        "mean_area_sqft": 1552.3272345132743
+    },
+    "locality_spread_pct": 17.592235201584714,
+    "bhk_distribution": {
+        "2.0": 7,
+        "3.0": 13,
+        "4.0": 1
+    }
+}

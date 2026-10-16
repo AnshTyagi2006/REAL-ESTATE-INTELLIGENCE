@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare Indian property asking prices with relevant comparable properties, market evidence and explainable valuation signals.">
+    <meta name="theme-color" content="#f5f5f2">
+    <meta property="og:title" content="Real Estate Intelligence — Know what a property is really worth">
+    <meta property="og:description" content="Search Indian property markets, compare relevant listings and understand estimated fair value.">
+    <title>Real Estate Intelligence | AI Property Valuation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\landing.css">
+
+    <!-- Motion libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+    <script src="js\landing.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="header-inner shell">
+            <a class="brand" href="/" aria-label="Real Estate Intelligence home">
+                <span class="brand-symbol" aria-hidden="true"><i></i><i></i><b></b></span>
+                <span class="brand-type"><strong>RE</strong><small>Real Estate<br>Intelligence</small></span>
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#features">Platform</a><a href="#valuation">Intelligence</a><a href="#markets">Market</a>
+                <div class="about-menu">
+                    <a class="about-trigger" href="#about" aria-haspopup="true">About <span aria-hidden="true"><svg viewBox="0 0 8 5"><path d="M1 1L4 4L7 1" /></svg></span></a>
+                    <div class="about-popover" aria-label="Connect with the creator">
+                        <a href="https://www.linkedin.com/in/ansh-tyagi2006" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                        <a href="https://github.com/AnshTyagi2006" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="mailto:anshtyagiansh0@gmail.com">Email <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">☼</span></button>
+                <span class="header-divider" aria-hidden="true"></span>
+                <button class="text-action" type="button" data-auth-open="login">Login</button>
+                <a class="header-cta dashboard-cta" href="/home" data-protected-route>Open Dashboard <span aria-hidden="true">→</span></a>
+                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+            <a href="#features">Platform</a><a href="#markets">Market</a><a href="#valuation">Intelligence</a><a href="#about">About</a>
+            <button type="button" data-auth-open="login">Login</button><button type="button" data-auth-open="register">Create account</button>
+            <a class="mobile-workspace" href="/home" data-protected-route>Explore workspace <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-grid shell">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-rule"></span> DATA DRIVEN REAL ESTATE DECISIONS</p>
+                    <h1 id="hero-title">Understand properties<br><em>beyond</em> the asking price.</h1>
+                    <p class="hero-lede">Explore Indian property markets, compare relevant listings, and understand how asking prices relate to estimated fair value.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="/home" data-protected-route>Explore Properties <span aria-hidden="true">→</span></a>
+                        <a class="button hero-market-button" href="#markets">Explore Market</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-label="Illustrative urban residential architecture and valuation visualization">
+                    <div class="architecture-image" role="img" aria-label="Illustrative modern Indian apartment society in an urban setting">
+                        <div class="image-sky"></div><div class="city-haze"></div>
+                        <div class="tower tower-back"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="tower tower-mid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="tower tower-front"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="landscape"><i></i><i></i><i></i><i></i><i></i></div>
+                        <span class="architecture-caption">INDIAN URBAN RESIDENTIAL CONTEXT · ILLUSTRATIVE</span>
+                    </div>
+                    <div class="hero-data-card" aria-label="Illustrative valuation, not a live property result">
+                        <div class="data-card-top"><span class="signal-dot"></span><span>EXAMPLE MODEL SIGNAL</span><span class="data-card-index">01 / 04</span></div>
+                        <div class="hero-prices"><div><small>ASKING</small><strong>₹3.00 <i>Cr</i></strong></div><span class="price-divider" aria-hidden="true">→</span><div><small>ESTIMATED</small><strong>₹2.60 <i>Cr</i></strong></div></div>
+                        <div class="premium-line"><span>ASKING PREMIUM</span><strong>+15.4%</strong></div>
+                        <p>Illustrative valuation · not a live result</p>
+                    </div>
+                    <span class="hero-visual-index" aria-hidden="true">FIG. 01 — MARKET CONTEXT</span>
+                </div>
+            </div>
+            <div class="hero-bottom shell"><span>SEARCH</span><i></i><span>COMPARE</span><i></i><span>VALUE</span><i></i><span>UNDERSTAND</span><i></i><span>DECIDE</span><span class="hero-bottom-note">A clearer view of the asking price</span></div>
+        </section>
+
+        <section class="features section-space platform-section" id="features" aria-labelledby="features-title">
+            <div class="shell platform-section-inner">
+                <div class="section-intro feature-intro platform-intro">
+                    <p class="eyebrow platform-eyebrow">THE PLATFORM</p>
+                    <h2 class="platform-title" id="features-title">Everything needed to <span>understand</span> a property.</h2>
+                    <p class="platform-description">One considered workflow connects a listing to the market evidence behind its price.</p>
+                    <a class="button button-primary feature-explore-button platform-primary-cta" href="/home" data-protected-route>Explore the platform <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="feature-grid platform-card-grid">
+                    <article class="feature-panel feature-search platform-card">
+                        <div class="platform-card-top">
+                            <div class="feature-panel-copy platform-card-copy"><span class="feature-no platform-card-kicker">01 / DISCOVER</span><h3 class="platform-card-title">Property search</h3><p class="platform-card-description">Find residential properties across indexed Indian markets using the details that matter.</p></div>
+                            <span class="platform-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10.8 18.2a7.4 7.4 0 1 1 5.2-2.2l4.1 4.1-1.4 1.4-4.1-4.1a7.3 7.3 0 0 1-3.8.8Zm0-2a5.4 5.4 0 1 0 0-10.8 5.4 5.4 0 0 0 0 10.8Z"/></svg></span>
+                        </div>
+                        <div class="search-visual platform-card-content" aria-label="Conceptual property search interface">
+                            <div class="search-ui-head"><span class="mini-brand">REI / SEARCH</span><span class="ui-status">INDEXED MARKETS</span></div>
+                            <div class="search-fields"><div><small>CITY</small><strong>Bangalore <b>⌄</b></strong></div><div><small>LOCALITY</small><strong>Any locality <b>⌄</b></strong></div><div><small>CONFIGURATION</small><strong>2–3 BHK <b>⌄</b></strong></div><div><small>AREA</small><strong>1,200+ sqft <b>⌄</b></strong></div></div>
+                            <a class="platform-search-button" href="/search" data-protected-route><span aria-hidden="true">⌕</span> Search Properties</a>
+                        </div>
+                        <a href="/search" data-protected-route class="panel-link platform-card-link">Explore search <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="feature-panel feature-comps-card platform-card">
+                        <div class="platform-card-top">
+                            <div class="feature-panel-copy platform-card-copy"><span class="feature-no platform-card-kicker">02 / CONTEXT</span><h3 class="platform-card-title">Comparable engine</h3><p class="platform-card-description">Compare nearby properties by location, area and other available characteristics.</p></div>
+                            <span class="platform-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.8 3 7.3v9.4l9 4.5 9-4.5V7.3l-9-4.5Zm0 2.2 6.6 3.3L12 11.6 5.4 8.3 12 5Zm-7 5 6 3v5.8l-6-3V10Zm8 8.8V13l6-3v5.8l-6 3Z"/></svg></span>
+                        </div>
+                        <div class="mini-comps platform-card-content" aria-label="Illustrative nearby comparison properties">
+                            <div class="platform-comp-mini"><span>1.8 km</span><strong>₹2.48 Cr</strong></div><div class="platform-comp-mini"><span>2.1 km</span><strong>₹2.63 Cr</strong></div><div class="platform-comp-mini"><span>2.7 km</span><strong>₹2.79 Cr</strong></div><span class="mini-target">SUBJECT</span><small>ILLUSTRATIVE COMPARABLE SET</small>
+                        </div>
+                        <a href="#comparables" class="panel-link platform-card-link">See how it compares <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="feature-panel feature-ml-card platform-card">
+                        <div class="platform-card-top">
+                            <div class="feature-panel-copy platform-card-copy"><span class="feature-no platform-card-kicker">03 / ESTIMATE</span><h3 class="platform-card-title">ML valuation</h3><p class="platform-card-description">Review a model-based estimate when the required property inputs are available.</p></div>
+                            <span class="platform-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16v2H2V3h2v16Zm3-2V9h3v8H7Zm5 0V5h3v12h-3Zm5 0v-6h3v6h-3Z"/></svg></span>
+                        </div>
+                        <div class="mini-valuation platform-card-content" aria-label="Illustrative asking price versus estimated value">
+                            <div class="mini-val-row"><span>ASKING PRICE</span><strong>₹3.00 Cr</strong><i><b></b></i></div><div class="mini-val-row"><span>ESTIMATED VALUE</span><strong>₹2.60 Cr</strong><i><b></b></i></div><small>EXAMPLE VALUES · NOT LIVE</small>
+                        </div>
+                        <a href="#valuation" class="panel-link platform-card-link">View model signal <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="feature-panel feature-explain-card platform-card">
+                        <div class="platform-card-top">
+                            <div class="feature-panel-copy platform-card-copy"><span class="feature-no platform-card-kicker">04 / EXPLAIN</span><h3 class="platform-card-title">Understand the signal</h3><p class="platform-card-description">Explore which available property and market characteristics contributed to a prediction.</p></div>
+                            <span class="platform-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm-1-13h2v2h-2V7Zm0 4h2v6h-2v-6Z"/></svg></span>
+                        </div>
+                        <div class="mini-factors platform-card-content" aria-label="Conceptual feature contribution bars">
+                            <div><span>Area</span><i><b style="--bar:72%"></b></i><em>72%</em></div><div><span>Bedrooms</span><i><b style="--bar:54%"></b></i><em>54%</em></div><div><span>Locality</span><i><b style="--bar:36%"></b></i><em>36%</em></div><small>MODEL CONTRIBUTIONS · CONCEPTUAL</small>
+                        </div>
+                        <a href="#valuation" class="panel-link platform-card-link">Explore intelligence <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="markets section-space" id="markets" aria-labelledby="markets-title">
+            <div class="shell">
+                <div class="markets-heading"><div class="section-intro"><p class="eyebrow"><span class="eyebrow-rule"></span> INDIAN MARKET REACH</p><h2 id="markets-title">Grounded in the markets you <span class="market-highlight">know.</span></h2><p>Browse indexed residential-property markets across Indian cities and regional clusters.</p></div><span class="market-count-note">14 MARKETS<br><small>INDEXED COVERAGE</small></span></div>
+                <div class="market-layout">
+                    <div class="city-list" role="group" aria-label="Select a city to view indexed coverage">
+                        <button class="city-option active" type="button" data-city="Bangalore" data-image-src="https://images.openai.com/static-rsc-4/HAEqPnFiihBzKI3_IP7GL7bacXnwas127uf6BWAGlHbXuPhY_ViunVFS4imFKDJVCi70FmBb9zX2Qk2o5InRGrZsubOwMfp1LDAwM_vgcDwvcw30x0G_eWTZVcuDBuiKvNqvvqgAmGnnzbSvKYORczRXperubaUEvkYM_ZNgVKUWKUoNq5b84YdonZgRjnp2?purpose=fullsize" aria-pressed="true"><span>Bangalore</span><span>01</span></button>
+                        <button class="city-option" type="button" data-city="Chandigarh" data-image-src="https://images.openai.com/static-rsc-4/UHFYmLsPYMJnNbEasC5XLD3o9tekqMPRk_q2Gj90KNNbpLWReO7yKih_sjery6kAsaF8-7j5FUSgsMkLHGGB2Wo9v7hBkpOn0MiQCesbONa6-uVRiv-uXBVCRgHSyDckYOUEIyLlepGjWerbzW8qUXWROs5Q8YhAGM_Z7a5lGTc?purpose=inline" aria-pressed="false"><span>Chandigarh</span><span>02</span></button>
+                        <button class="city-option" type="button" data-city="Dehradun" data-image-src="https://images.openai.com/static-rsc-4/ra-dcnvzaoTWd28wQIp8pQWaYKLIVEKOT9d8mNxQKpU6FxB0T-fMxV_OQ6vYiAL8VlNWQzYqX9SA8QKTAukC3F2jEgO8UydvG1CelitpW5WFk4MH8VWBBlDdGUpmt58JZ926DdgSTToSM9CjcDRN4vY5cKeh8V5aNAvLrBjeBrc?purpose=inline" aria-pressed="false"><span>Dehradun</span><span>03</span></button>
+                        <button class="city-option" type="button" data-city="Delhi" data-image-src="https://images.openai.com/static-rsc-4/Mw8rfrlUtS6-jlJTAzkLr-GQHKqQgQCc0IgW_us9414QFgkN1pESNffyrz5EoUD90_OJ0jzKSB0ZKeXfeDkRzDO2_Zw1s_xU1zhPJNL4O1YXWx_C9QHI5_bXx7cD5zagKYbudP17b5AdXVIHTrIOpBonHmh2s0-KqhlQaSDkIz8?purpose=inline" aria-pressed="false"><span>Delhi</span><span>04</span></button>
+                        <button class="city-option" type="button" data-city="Faridabad" data-image-src="https://images.openai.com/static-rsc-4/WulkPm65CZKvH9m3BL9vfn9qYPP8kbDkrcDqiVJ0QnfS6rPqigJTemGtQLhNvRp6TWrm_uVYA4UylWVygPT1LCyffeoW1-wRAJSsT2swjo0U0hBYcHy6YLCX7-b5W16JctrLbAc_qPER3FZiDrNwaHzIfOJxQVgyMTmd2XlYj0c?purpose=inline" aria-pressed="false"><span>Faridabad</span><span>05</span></button>
+                        <button class="city-option" type="button" data-city="Ghaziabad" data-image-src="https://images.openai.com/static-rsc-4/o-VS9K4_l2IZsdChyU3hYKgGdIDzF8yQ2s6zcjHKje1704lL6LSSUOXw3lP2mikc5KJN77l-DUWmje8krRRsp3o-0AkxbKfN9PbVLmX9bZfjEEU6wY4rp47Yz0N2sy5Ix5blDuXN83cObjSHLWWxDhNK6xp0TCSoj_M89Ly66oFn6smBbvQKz9ajqMWeeeED?purpose=fullsize" aria-pressed="false"><span>Ghaziabad</span><span>06</span></button>
+                        <button class="city-option" type="button" data-city="Greater Noida" data-image-src="https://images.openai.com/static-rsc-4/L9yDaprMKwR9rQtyAhC3yyiBOwetfPuO9sZCevv7izaf6EW9b5XLsEX43gmlxNfoOqkEaBIcCc3O6YWnlQY9zqsLzrGpuPbNyhN54auRdaOrJr1Rt9bPmm8D99jA101VJXAauAwjvV0Cs3swFERRJzuSKYQoSPUKSsCZD3STFjg?purpose=inline" aria-pressed="false"><span>Greater Noida</span><span>07</span></button>
+                        <button class="city-option" type="button" data-city="Gurgaon" data-image-src="https://images.openai.com/static-rsc-4/6EUIKDcUD33MKfmzt5sKU2xw9bZTXf5DNe6Zr6ZkLl4tni7MuzhBvcjnTCHBPj_lZfV-qmuycw6qoHGwVlMPcIlL2agdyZ7n_rM26xzwJKtwOt0M7NFAnKAcwikZoSTt3AFIwZMXpuxrCSrELiyb_zPeXEbam_GZ2fNykbmcego?purpose=inline" aria-pressed="false"><span>Gurgaon</span><span>08</span></button>
+                        <button class="city-option" type="button" data-city="Hyderabad" data-image-src="https://images.openai.com/static-rsc-4/IhZBD8FFZDHt9z7pnUj9weuR30zbazM9VPoIllN2n3aWz-4rPp5-CvtuX1cAS5sUXMpJnsgFBG4XfT0O_h1iRfrZJcEGRW9nA_V6GSeo2PyvlBa0TCi165zp4xKGobuTerfRPQO_6-FTFi0uusW6HQNfqk1365TV2ARR9jxAM-s?purpose=inline" aria-pressed="false"><span>Hyderabad</span><span>09</span></button>
+                        <button class="city-option" type="button" data-city="Kolkata" data-image-src="https://images.openai.com/static-rsc-4/qKw7pNAaldldH1EZ-fKidXgC0wFvReaJxRbx3NfRV__O2KRrLNWjVexxfuNp5QYtUwQvtmsMSKkjwMK7MoH6f-2wiGStfVSu18Efpd1Wt7RUM2woBVWBpG-vSmS5DTlO2YyxwIWmvR2Nj21UvcSeNWhfoNzUyCIfc2maqcm2Y64?purpose=inline" aria-pressed="false"><span>Kolkata</span><span>10</span></button>
+                        <button class="city-option" type="button" data-city="Mohali" data-image-src="https://images.openai.com/static-rsc-4/UnILBYB_RPD7cv9JiZHl-js6cy3y1KEJhmPgesDLgEdvj1eLfUrl14Uyj_fNu-RShSliSUc5ZxDB-yf-AeQxOE7DN7plguUGDEbsGODK3pY6hRG_NjtX6L0BB3uK4mU3MWnPgAZcYJ8rgnRjJI9KqdDIp-2m9pNOq59NYaycL9I?purpose=inline" aria-pressed="false"><span>Mohali</span><span>11</span></button>
+                        <button class="city-option" type="button" data-city="Mumbai" data-image-src="https://images.openai.com/static-rsc-4/OCgQYkUcjKPIZJmeKaEK_NJz6j0LZdyWZxeBYPrmseU1EXcdWBiagsMjLm_RxPrv-ZokfD1qHJ4jC0aYx_nW32nfhtiBgqIwVrRucIvTrKgn_yMbSiJwp8NcsCkfCN_oz-Rgq-uyhx6LtZw63KC6KOYxIeYANrE-L2CQ_45q7qk?purpose=inline" aria-pressed="false"><span>Mumbai</span><span>12</span></button>
+                        <button class="city-option" type="button" data-city="Noida" data-image-src="https://images.openai.com/static-rsc-4/F5lrtOObzYC66JKj63EY4hqTGEpc6XVZZ-UWlAx8yMpjeMlu1rS-nbALpvwk-RmrbS_aqCa9D0eNKksH9NNquBFH0J-D1Gofvl-oOaq8c0xRmLveGXX7LjtwmqBqLpA38iZmrQtmF8OBtY1nONOUyYPSAiLxbsWMCpNArQYGWSg?purpose=inline" aria-pressed="false"><span>Noida</span><span>13</span></button>
+                        <button class="city-option" type="button" data-city="Panchkula" data-image-src="https://www.visioninfraventure.com/storage/app/public/property/1743773953_67efe101160ab.jpg" aria-pressed="false"><span>Panchkula</span><span>14</span></button>
+                    </div>
+                    <div class="market-feature">
+                        <div class="market-architecture" role="img" aria-label="Residential market image for Bangalore">
+                            <div class="market-backdrop">
+                                <img id="market-city-image" class="market-city-image" src="https://images.openai.com/static-rsc-4/HAEqPnFiihBzKI3_IP7GL7bacXnwas127uf6BWAGlHbXuPhY_ViunVFS4imFKDJVCi70FmBb9zX2Qk2o5InRGrZsubOwMfp1LDAwM_vgcDwvcw30x0G_eWTZVcuDBuiKvNqvvqgAmGnnzbSvKYORczRXperubaUEvkYM_ZNgVKUWKUoNq5b84YdonZgRjnp2?purpose=fullsize" alt="Residential market in Bangalore">
+                                <span class="sun-disc"></span><div class="market-building mb-one"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="market-building mb-two"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="market-building mb-three"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="market-tree tree-a"></div><div class="market-tree tree-b"></div><div class="market-ground"></div>
+                            </div>
+                            <span class="market-image-caption">RESIDENTIAL CONTEXT · ILLUSTRATIVE</span>
+                        </div>
+                        <div class="market-feature-footer"><div><small>SELECTED MARKET</small><h3 id="selected-city">Bangalore</h3><p><strong id="selected-count">1,041</strong> indexed properties</p></div><a id="market-search-link" class="market-arrow" href="/search?city=Bangalore" data-protected-route aria-label="Explore Bangalore properties">↗</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparables section-space" id="comparables" aria-labelledby="comparables-title">
+            <div class="shell comparable-layout">
+                <div class="comparable-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> COMPARABLE PROPERTY ENGINE</p><h2 id="comparables-title">A price makes more sense in <span class="comparable-highlight">company</span>.</h2><p>Relevant nearby properties provide context for an asking price. The comparison uses location and property characteristics available in indexed data.</p><a href="/search" data-protected-route class="button button-outline">Explore properties <span aria-hidden="true">↗</span></a><p class="visual-disclaimer">Illustrative comparable set — these are not live property records.</p></div>
+                <div class="comparable-visual" aria-label="Illustrative comparable property visualization">
+                    <div class="compare-orbit orbit-outer"></div><div class="compare-orbit orbit-inner"></div><svg class="compare-connectors" viewBox="0 0 700 500" aria-hidden="true"><path d="M350 248 155 95M350 248 524 90M350 248 570 245M350 248 520 410M350 248 155 400"/><circle cx="350" cy="248" r="3"/><circle cx="155" cy="95" r="2"/><circle cx="524" cy="90" r="2"/><circle cx="570" cy="245" r="2"/><circle cx="520" cy="410" r="2"/><circle cx="155" cy="400" r="2"/></svg>
+                    <article class="comp-card comp-a"><small>COMPARABLE 01</small><strong>3 BHK <span>·</span> 1,850 sqft</strong><b>₹2.48 Cr</b><em>1.8 km</em></article>
+                    <article class="comp-card comp-b"><small>COMPARABLE 02</small><strong>3 BHK <span>·</span> 1,920 sqft</strong><b>₹2.63 Cr</b><em>2.1 km</em></article>
+                    <article class="comp-card comp-c"><small>COMPARABLE 03</small><strong>2 BHK <span>·</span> 1,460 sqft</strong><b>₹2.12 Cr</b><em>1.2 km</em></article>
+                    <article class="comp-card comp-d"><small>COMPARABLE 04</small><strong>3 BHK <span>·</span> 2,010 sqft</strong><b>₹2.79 Cr</b><em>2.7 km</em></article>
+                    <article class="comp-card comp-e"><small>COMPARABLE 05</small><strong>3 BHK <span>·</span> 1,780 sqft</strong><b>₹2.39 Cr</b><em>1.5 km</em></article>
+                    <div class="target-property"><span class="target-pulse"></span><small>SUBJECT PROPERTY</small><strong>3 BHK</strong><span>2,071 sqft</span><b>₹3.00 Cr asking</b></div>
+                    <div class="compare-summary"><small>ILLUSTRATIVE COMPARABLE SET</small><strong>Median ₹/sqft <span>₹14,343</span></strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="valuation section-space" id="valuation" aria-labelledby="valuation-title">
+            <div class="shell">
+                <div class="valuation-layout">
+                    <div class="valuation-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> ML VALUATION + EXPLAINABILITY</p><h2 id="valuation-title">See the estimate. <span class="valuation-highlight">Understand the signals.</span></h2><p>Compare the asking price with a model estimate, explore relevant market evidence, and see which available property details influenced the prediction.</p><p class="valuation-caveat">Estimates depend on available data. They are not appraisals or guaranteed transaction prices.</p></div>
+                    <div class="valuation-visual" aria-label="Illustrative asking price and estimated value comparison">
+                        <div class="valuation-label-row"><span>EXAMPLE MODEL SIGNAL</span><span>NOT A LIVE PROPERTY</span></div>
+                        <div class="valuation-numbers"><div><small>ASKING PRICE</small><strong>₹3.00 <i>Cr</i></strong></div><span class="valuation-arrow" aria-hidden="true">→</span><div><small>ESTIMATED VALUE</small><strong>₹2.60 <i>Cr</i></strong></div></div>
+                        <div class="comparison-meter"><div class="meter-labels"><span>ESTIMATED VALUE</span><span>ASKING PRICE</span></div><div class="meter-track"><span class="meter-estimate"></span><span class="meter-asking"></span><i></i></div><div class="premium-callout"><strong>+15.4%</strong><span>asking premium<br>in this illustration</span></div></div>
+                        <div class="valuation-sources"><span>MODEL SIGNAL</span><i></i><span>COMPARABLE EVIDENCE</span><i></i><span>LOCALITY CONTEXT</span></div>
+                    </div>
+                </div>
+                <div class="explainability">
+                    <div class="explain-copy"><span class="feature-no">MODEL INTERPRETATION</span><h3>What shaped this <span class="valuation-highlight">estimate?</span></h3><p>Explore how available property details influenced the model estimate. These signals show model relationships, not cause and effect.</p></div>
+                    <div class="factor-explorer">
+                        <div class="factor-group"><small>POSITIVE MODEL INFLUENCE</small><div class="factor-buttons"><button type="button" class="factor-button active" data-factor="area" aria-pressed="true"><span>Area</span><i><b style="--bar:82%"></b></i><em>+</em></button><button type="button" class="factor-button" data-factor="bedrooms" aria-pressed="false"><span>Bedrooms</span><i><b style="--bar:59%"></b></i><em>+</em></button><button type="button" class="factor-button" data-factor="bathrooms" aria-pressed="false"><span>Bathrooms</span><i><b style="--bar:38%"></b></i><em>+</em></button></div></div>
+                        <div class="factor-group factor-down"><small>DOWNWARD MODEL INFLUENCE</small><div class="factor-buttons"><button type="button" class="factor-button" data-factor="locality" aria-pressed="false"><span>Locality</span><i><b style="--bar:62%"></b></i><em>−</em></button><button type="button" class="factor-button" data-factor="location" aria-pressed="false"><span>Location</span><i><b style="--bar:48%"></b></i><em>−</em></button><button type="button" class="factor-button" data-factor="floor" aria-pressed="false"><span>Floor features</span><i><b style="--bar:31%"></b></i><em>−</em></button></div></div>
+                        <div class="factor-detail" id="factor-detail" aria-live="polite"><span>SELECTED FACTOR</span><strong id="factor-title">Area</strong><p id="factor-description">2,071 sqft · positive model influence in this conceptual example.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta" id="cta" aria-labelledby="cta-title">
+            <div class="cta-architecture" aria-hidden="true"><div class="cta-tower cta-tower-one"></div><div class="cta-tower cta-tower-two"></div><div class="cta-tower cta-tower-three"></div><div class="cta-landscape"></div></div>
+            <div class="cta-overlay"></div>
+            <div class="cta-content shell"><p class="eyebrow eyebrow-light"><span class="eyebrow-rule"></span> REAL ESTATE INTELLIGENCE</p><h2 id="cta-title">Search the market.<br><em>Understand the value.</em></h2><p>Explore indexed properties and see the intelligence behind their valuation.</p><div class="cta-actions"><a class="button button-primary" href="/search" data-protected-route>Explore properties <span aria-hidden="true">↗</span></a><a class="cta-secondary" href="/market" data-protected-route>View market intelligence <span aria-hidden="true">↗</span></a></div><small class="cta-image-note">Illustrative Indian residential architecture · not a property listing</small></div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+        <div class="shell footer-main">
+            <div class="footer-brand-block">
+                <a class="brand footer-brand" href="/" aria-label="Real Estate Intelligence home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><b></b></span><span class="brand-type"><strong>RE</strong><small>Real Estate<br>Intelligence</small></span></a>
+                <p>Property context for more informed decisions.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="/search" data-protected-route>Property search</a>
+                <a href="/market" data-protected-route>Market intelligence</a>
+                <a href="#comparables">Comparable engine</a>
+                <a href="#valuation">Valuation methodology</a>
+            </div>
+            <div class="footer-column footer-connect">
+                <h2>Connect</h2>
+                <a class="social-link" href="https://www.linkedin.com/in/ansh-tyagi2006" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.4 9.5H7v11H3.4v-11Zm5.8 0h3.5V11h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v5.9h-3.7v-5.2c0-1.2 0-2.8-1.8-2.8s-2.1 1.3-2.1 2.7v5.3H9.2v-11Z"/></svg>
+                    LinkedIn
+                </a>
+                <a class="social-link" href="https://github.com/AnshTyagi2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.1 3.9 1.4.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.1 1.1a10.8 10.8 0 0 1 5.7 0c2.2-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v2.9c0 .4.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                    GitHub
+                </a>
+                <a class="social-link" href="mailto:anshtyagiansh0@gmail.com" aria-label="Email Ansh Tyagi">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8.1L4.5 7H4v10h16V7h-.5L12 13.1Zm0-2.1L19.2 7H4.8l7.2 4Z"/></svg>
+                    Email
+                </a>
+                <button type="button" class="footer-login" data-auth-open="login">Workspace login <span aria-hidden="true">↗</span></button>
+            </div>
+        </div>
+        <div class="shell footer-bottom">
+            <p>Real Estate Intelligence provides analytical estimates based on available listing and market data. Estimates are not guaranteed transaction prices, professional appraisals or financial advice.</p>
+            <span>© <span id="current-year"></span> REI</span>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden><span aria-hidden="true">↑</span><span>Back to top</span></button>
+
+    <div class="auth-overlay" id="auth-overlay" hidden>
+        <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" aria-describedby="auth-subtitle" tabindex="-1">
+            <button class="auth-close" id="auth-close" type="button" aria-label="Close account dialog">×</button>
+            <aside class="auth-aside"><span class="auth-aside-mark">RE<span>.</span></span><p>Make the asking price<br>part of the conversation.</p><small>PROPERTY INTELLIGENCE · INDIA</small></aside>
+            <div class="auth-content"><p class="auth-kicker">REAL ESTATE INTELLIGENCE</p><h2 id="auth-title">Welcome back</h2><p class="auth-subtitle" id="auth-subtitle">Sign in to continue to your property intelligence workspace.</p>
+                <div class="auth-tabs" role="tablist" aria-label="Account access"><button type="button" class="auth-tab active" id="login-tab" role="tab" aria-selected="true" aria-controls="login-form" data-auth-mode="login">Sign in</button><button type="button" class="auth-tab" id="register-tab" role="tab" aria-selected="false" aria-controls="register-form" data-auth-mode="register">Create account</button></div>
+                <form id="login-form" class="auth-form" novalidate><label for="login-email">Email</label><input id="login-email" name="username" type="email" autocomplete="username" placeholder="you@example.com" required><label for="login-password">Password</label><div class="password-wrap"><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" data-password-toggle="login-password" aria-label="Show password">Show</button></div><button type="submit" class="auth-submit">Sign in <span aria-hidden="true">→</span></button></form>
+                <form id="register-form" class="auth-form" hidden novalidate><label for="register-name">Full name</label><input id="register-name" name="name" type="text" autocomplete="name" placeholder="Your name" required><label for="register-email">Email</label><input id="register-email" name="username" type="email" autocomplete="email" placeholder="you@example.com" required><label for="register-password">Password</label><div class="password-wrap"><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required><button type="button" data-password-toggle="register-password" aria-label="Show password">Show</button></div><label for="register-confirm">Confirm password</label><input id="register-confirm" name="confirm-password" type="password" autocomplete="new-password" placeholder="Repeat your password" required><p class="password-hint">Use at least 8 characters.</p><button type="submit" class="auth-submit">Create account <span aria-hidden="true">→</span></button></form>
+                <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p><p class="auth-switch" id="auth-switch"><span>New to REI?</span> <button type="button" data-auth-mode="register">Create an account</button></p><p class="auth-switch" id="auth-switch-register" hidden><span>Already have an account?</span> <button type="button" data-auth-mode="login">Sign in</button></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+{
+  "city": "Chandigarh",
+  "source": "99acres",
+  "source_url": "https://www.99acres.com/flats-in-chandigarh-ffid",
+  "extraction": {
+    "extracted_at": "2026-09-17T07:01:22.949Z",
+    "pages_with_data": 70,
+    "pages_without_data": 8
+  },
+  "raw_records": 1717,
+  "unique_prop_ids": 1717,
+  "duplicates_removed": 0,
+  "structurally_removed": 34,
+  "final_model_ready": 1683,
+  "valuation_training_eligible": 1665,
+  "flagged_retained": 18,
+  "removed_records": [
+    {
+      "listing_id": "N93107930",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "A93302574",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "O94125240",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "F94327608",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "Y93602030",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "F83808752",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "G93846452",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "H93592776",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "O82870824",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "D93063148",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "C93054966",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "S56457570",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "H91460188",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "W92047156",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "H89692564",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "I93218748",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "J94115002",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "B90640058",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "G91818042",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "V92973454",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "P80689745",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "F92818862",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "P93053490",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "Z93998998",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "N93402440",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "C92815582",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "X93730756",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "W93277574",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "F93182476",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "N88542432",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "K93849394",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "Q93822134",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "K88966222",
+      "reason": "implausible_area_lt_300"
+    },
+    {
+      "listing_id": "Y90337742",
+      "reason": "implausible_area_lt_300"
+    }
+  ],
+  "flag_counts": {
+    "extreme_area": 18,
+    "extreme_ppsf": 0,
+    "bhk_area_mismatch": 0
+  },
+  "area_basis_counts": {
+    "SUPERBUILTUP_AREA": 1305,
+    "CARPET_AREA": 345,
+    "BUILTUP_AREA": 33
+  },
+  "price_inr": {
+    "min": 2200000.0,
+    "median": 14700000.0,
+    "max": 130000000.0
+  },
+  "ppsf": {
+    "min": 2735.0,
+    "median": 8166.0,
+    "max": 38040.0
+  },
+  "area_sqft_model": {
+    "min": 345.0,
+    "median": 1844.0,
+    "max": 9945.0
+  },
+  "bhk_counts": {
+    "1": 15,
+    "2": 207,
+    "3": 1151,
+    "4": 282,
+    "5": 26,
+    "6": 1,
+    "8": 1
+  },
+  "property_type_counts": {
+    "Residential Apartment": 1671,
+    "Duplex Residential Apartment": 8,
+    "Penthouse": 4
+  },
+  "status_counts": {
+    "ready_to_move": 1261,
+    "under_construction": 420,
+    "resale": 1683,
+    "new_booking": 0
+  },
+  "top_localities": {
+    "Zirakpur": 989,
+    "Mullanpur": 228,
+    "New Chandigarh": 189,
+    "Dhakoli": 62,
+    "Dera Bassi": 41,
+    "Sector 44 Chandigarh": 20,
+    "Sector 63 Chandigarh": 16,
+    "Sector 49 Chandigarh": 15,
+    "Manimajra": 13,
+    "Kharar": 12,
+    "Sector 51 Chandigarh": 11,
+    "Sector 48 Chandigarh": 10,
+    "Sector 45 Chandigarh": 9,
+    "Vip Road": 7,
+    "Sector 50 Chandigarh": 7,
+    "Sector 43 Chandigarh": 5,
+    "Sector 39 B Chandigarh": 5,
+    "Sector 38 West": 4,
+    "47C Sector 47 Chandigarh": 3,
+    "Krishna Enclave": 2,
+    "Village Pabhat": 2,
+    "Sector 49B Chandigarh": 2,
+    "Mohali": 2,
+    "Sector 47 Chandigarh": 2,
+    "Pabhat": 2
+  },
+  "notes": [
+    "Projects were excluded upstream by the extraction script; this dataset contains individual property listings.",
+    "Area basis is preserved and mixed (carpet/super built-up/built-up); valuation models should not treat these as interchangeable.",
+    "Listings with implausibly small model areas (<300 sqft) were structurally removed.",
+    "Legitimate large properties (>5000 sqft) were retained and flagged for analytical review rather than deleted.",
+    "The source extraction report's invalid_area_records count appears inflated (3434 for 1717 records); raw records were revalidated directly."
+  ]
+}

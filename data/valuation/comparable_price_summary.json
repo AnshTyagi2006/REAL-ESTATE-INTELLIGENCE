@@ -1,0 +1,15 @@
+{
+    "target_property_id": "RE-00000001",
+    "target_city": "Bangalore East",
+    "target_locality": "Budigere Cross, Bangalore",
+    "target_area_sqft": 1907.6,
+    "target_bedrooms": 3.0,
+    "target_bathrooms": 3.0,
+    "candidate_count": 141,
+    "same_locality_count": 8,
+    "same_locality_within_5km_count": 8,
+    "within_5km_count": 15,
+    "top20_median_ppsf": 14865.000336657515,
+    "same_locality_median_ppsf": 14201.637050704758,
+    "within_5km_median_ppsf": 12412.177985948478
+}

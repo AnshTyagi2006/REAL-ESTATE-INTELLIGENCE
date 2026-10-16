@@ -1,0 +1,58 @@
+{
+  "raw_records_combined": 1030,
+  "unique_prop_ids": 1030,
+  "duplicates_removed": 0,
+  "structurally_removed": 7,
+  "final_model_ready_records": 1023,
+  "valuation_training_eligible_records": 1017,
+  "flag_counts": {
+    "extreme_ppsf": 5,
+    "extreme_area": 5,
+    "bhk_area_mismatch": 1
+  },
+  "price_inr": {
+    "min": 4500000.0,
+    "median": 40000000.0,
+    "max": 420000002.0
+  },
+  "price_per_sqft": {
+    "min": 3363.0,
+    "median": 36585.0,
+    "max": 428321.0
+  },
+  "bhk_distribution": {
+    "1": 61,
+    "2": 369,
+    "3": 437,
+    "4": 127,
+    "5": 20,
+    "6": 8,
+    "8": 1
+  },
+  "property_type_distribution": {
+    "Residential Apartment": 1021,
+    "Duplex Residential Apartment": 2
+  },
+  "top_localities": {
+    "Mulund West, Mumbai": 77,
+    "Worli, Mumbai": 57,
+    "Goregaon West, Mumbai": 39,
+    "Lower Parel, Mumbai": 35,
+    "Goregaon East, Mumbai": 34,
+    "Kandivali East, Mumbai": 34,
+    "Powai, Mumbai": 34,
+    "Bandra East, Mumbai": 30,
+    "Parel, Mumbai": 30,
+    "Chembur, Mumbai": 28,
+    "Ghatkopar East, Mumbai": 25,
+    "Malad West, Mumbai": 23,
+    "Mahalaxmi, Mumbai": 23,
+    "Chembur East, Mumbai": 22,
+    "Wadala, Mumbai": 22,
+    "Prabhadevi, Mumbai": 21,
+    "Hiranandani Gardens Powai, Mumbai": 20,
+    "Ghatkopar West, Mumbai": 18,
+    "Khar West, Mumbai": 17,
+    "Andheri West, Mumbai": 17
+  }
+}

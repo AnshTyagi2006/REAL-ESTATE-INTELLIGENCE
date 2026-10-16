@@ -1,0 +1,125 @@
+{
+  "city": "Kolkata",
+  "source": "99acres",
+  "source_url": "https://www.99acres.com/flats-in-kolkata-ffid",
+  "extracted_at": "2026-09-17T06:47:41.516Z",
+  "pages_with_data": 64,
+  "pages_without_data": 14,
+  "raw_records": 1382,
+  "unique_listing_ids_raw": 1382,
+  "duplicates_removed": 0,
+  "structurally_removed": 1,
+  "structurally_removed_records": [
+    {
+      "listing_id": "D93455914",
+      "reasons": [
+        "extreme_area_structural"
+      ]
+    }
+  ],
+  "final_model_ready": 1381,
+  "valuation_training_eligible": 1373,
+  "flagged_retained": 8,
+  "flag_counts": {
+    "coordinates_swapped": 13,
+    "extreme_ppsf_high": 4,
+    "price_area_mismatch": 1,
+    "extreme_area_high": 4
+  },
+  "coordinate_corrections": 13,
+  "price_stats": {
+    "count": 1381.0,
+    "mean": 11473490.852280956,
+    "std": 12659903.67489191,
+    "min": 1585000.0,
+    "25%": 4914000.0,
+    "50%": 7200000.0,
+    "75%": 12500000.0,
+    "max": 130000000.0
+  },
+  "price_per_sqft_stats": {
+    "count": 1381.0,
+    "mean": 7798.091238233164,
+    "std": 4778.621169796072,
+    "min": 2300.0,
+    "25%": 4883.0,
+    "50%": 6470.0,
+    "75%": 9090.0,
+    "max": 53571.0
+  },
+  "area_sqft_stats": {
+    "count": 1381.0,
+    "mean": 1306.8159884141926,
+    "std": 616.6063152296949,
+    "min": 281.0,
+    "25%": 930.0,
+    "50%": 1175.0,
+    "75%": 1460.0,
+    "max": 6034.0
+  },
+  "bhk_counts": {
+    "1": 16,
+    "2": 512,
+    "3": 716,
+    "4": 119,
+    "5": 13,
+    "6": 4,
+    "7": 1
+  },
+  "property_type_counts": {
+    "Residential Apartment": 1373,
+    "Duplex Residential Apartment": 8
+  },
+  "area_basis_counts": {
+    "SUPERBUILTUP_AREA": 1165,
+    "CARPET_AREA": 111,
+    "BUILTUP_AREA": 105
+  },
+  "status_counts": {
+    "Ready To Move": 1360,
+    "Under Construction": 20,
+    "Unknown": 1
+  },
+  "listing_type_counts": {
+    "AI_LISTING": 1081,
+    "INFINITY_LISTING": 170,
+    "PREMIUM_LISTING": 126,
+    "PSEUDO_LISTING": 2,
+    "PLATINUM_LISTING": 1,
+    "FREE_OWNER_LISTING": 1
+  },
+  "top_localities": {
+    "New Town, Kolkata": 137,
+    "Rajarhat, Kolkata": 103,
+    "Action Area 2, New Town": 55,
+    "Konnagar, Hooghly": 55,
+    "Garia, Kolkata": 44,
+    "EM Bypass, Kolkata South": 39,
+    "Narendrapur, Kolkata": 35,
+    "New Alipore, Kolkata": 35,
+    "Action Area 1, New Town": 31,
+    "Mukundapur, Kolkata": 26,
+    "Tollygunge, Kolkata": 23,
+    "Chinar Park, Kolkata": 21,
+    "Joka, Kolkata South": 19,
+    "Action Area 3, New Town": 19,
+    "Action Area 2B, New Town": 18,
+    "Airport, Kolkata North": 17,
+    "Salt Lake, Kolkata": 15,
+    "Naktala, Garia": 15,
+    "Nayabad, Kolkata": 15,
+    "Sodepur, Kolkata North": 14,
+    "Durganagar, Belgharia Expressway, Kolkata": 14,
+    "Madurdaha, EM Bypass, Kolkata South": 13,
+    "Uttarpara, Hooghly": 13,
+    "Rammohan Place, Konnagar": 13,
+    "Purbalok, EM Bypass": 13
+  },
+  "notes": [
+    "Area model field uses LOCALIZED_AREA_VALUE because some component area fields can contain inconsistent values; displayed localized area is preferred.",
+    "13 coordinate pairs were reversed in source and corrected when latitude/longitude ranges clearly indicated the swap.",
+    "One 40,000 sqft listing was structurally removed as an implausible apartment-area record.",
+    "Large-area and high-price-per-sqft observations were retained but excluded from baseline valuation training.",
+    "Kolkata data contains mixed area bases (super built-up, carpet, built-up); valuation models must control for area basis."
+  ]
+}

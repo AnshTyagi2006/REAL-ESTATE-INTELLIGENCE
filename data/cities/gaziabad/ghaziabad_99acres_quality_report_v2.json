@@ -1,0 +1,81 @@
+{
+  "city": "Ghaziabad",
+  "source": "99acres",
+  "source_extraction_report": "ghaziabad_99acres_extraction_report_2026-09-18T05-02-05-155Z.json",
+  "source_raw_file": "ghaziabad_99acres_raw_individual_properties_2026-09-18T05-02-05-155Z.json",
+  "extracted_at": "2026-09-18T05:02:05.155Z",
+  "raw_records": 876,
+  "unique_records": 876,
+  "duplicates_removed": 0,
+  "structurally_removed": 0,
+  "model_ready_records": 876,
+  "valuation_training_eligible": 857,
+  "retained_flagged_records": 19,
+  "removed_reason_counts": {},
+  "flag_counts": {
+    "bhk_area_mismatch": 16,
+    "extreme_ppsf_high": 3
+  },
+  "price_inr_stats": {
+    "min": 2800000.0,
+    "median": 11000000.0,
+    "max": 72500000.0
+  },
+  "area_sqft_stats": {
+    "min": 365.0,
+    "median": 1190.0,
+    "max": 4842.0
+  },
+  "price_per_sqft_stats": {
+    "min": 3500.0,
+    "median": 8309.5,
+    "max": 181712.0
+  },
+  "bhk_counts": {
+    "1": 4,
+    "2": 365,
+    "3": 429,
+    "4": 69,
+    "5": 9
+  },
+  "property_type_counts": {
+    "Residential Apartment": 872,
+    "Duplex Residential Apartment": 3,
+    "Duplex Penthouse": 1
+  },
+  "area_basis_counts": {
+    "CARPET": 546,
+    "SUPERBUILTUP": 273,
+    "BUILTUP": 57
+  },
+  "top_localities": {
+    "Raj Nagar Extension, Ghaziabad": 162,
+    "NH 24 Highway, Ghaziabad": 147,
+    "Crossing Republik, Ghaziabad": 141,
+    "Ahinsa Khand 2, Ghaziabad": 62,
+    "Siddharth Vihar, Ghaziabad": 60,
+    "Vaibhav Khand, Ghaziabad": 58,
+    "Ahinsa Khand 1, Ghaziabad": 52,
+    "Mehrauli, Ghaziabad": 24,
+    "Indirapuram, Ghaziabad": 24,
+    "Bhopura, Ghaziabad": 11,
+    "Bamheta, Ghaziabad": 10,
+    "Sain Vihar, Ghaziabad": 9,
+    "Sector 1 Vaishali, Ghaziabad": 9,
+    "Sector 2 Rajendra Nagar, Ghaziabad": 7,
+    "Nyay Khand 2, Ghaziabad": 6,
+    "Dundahera, Ghaziabad": 6,
+    "Govind Puram, Ghaziabad": 6,
+    "Sector 5 Vasundhara, Ghaziabad": 5,
+    "Sector 15 Vasundhara, Ghaziabad": 5,
+    "Nyay Khand 1, Ghaziabad": 5
+  },
+  "cleaning_rules": [
+    "Deduplicate by listing_id/PROP_ID.",
+    "Prefer explicit *_SQFT fields over secondary-unit MIN/MAX_AREA_SQFT values.",
+    "Remove nonpositive price/area, invalid BHK (>10 or <=0), invalid coordinates, and area below 300 sqft.",
+    "Retain large/high-value properties but flag extreme area and price-per-sqft values.",
+    "Flag BHK-area mismatch for review.",
+    "Preserve carpet/built-up/super-built-up area basis for valuation normalization."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "city": "Noida",
+  "source": "99acres",
+  "source_extraction_report": "noida_99acres_extraction_report_2026-09-17T08-42-26-907Z(3).json",
+  "source_raw_file": "noida_99acres_raw_individual_properties_2026-09-17T08-42-26-907Z(3).json",
+  "extracted_at": "2026-09-17T08:42:26.907Z",
+  "raw_records": 1247,
+  "unique_records": 1247,
+  "duplicates_removed": 0,
+  "structurally_removed": 0,
+  "model_ready_records": 1247,
+  "valuation_training_eligible": 1227,
+  "retained_flagged_records": 20,
+  "removed_reason_counts": {},
+  "flag_counts": {
+    "extreme_area_high": 6,
+    "bhk_area_mismatch": 14
+  },
+  "price_inr_stats": {
+    "min": 3800000.0,
+    "median": 21500000.0,
+    "max": 180000000.0
+  },
+  "area_sqft_stats": {
+    "min": 374.0,
+    "median": 1470.0,
+    "max": 6570.0
+  },
+  "price_per_sqft_stats": {
+    "min": 3767.0,
+    "median": 12838.0,
+    "max": 47413.0
+  },
+  "bhk_counts": {
+    "1": 6,
+    "2": 274,
+    "3": 723,
+    "4": 222,
+    "5": 19,
+    "6": 2,
+    "9": 1
+  },
+  "property_type_counts": {
+    "Residential Apartment": 1235,
+    "Duplex Residential Apartment": 12
+  },
+  "area_basis_counts": {
+    "CARPET": 666,
+    "SUPERBUILTUP": 484,
+    "BUILTUP": 97
+  },
+  "top_localities": {
+    "Sector 137, Noida": 164,
+    "Sector 150, Noida": 135,
+    "Sector 107, Noida": 112,
+    "Sector 128, Noida": 97,
+    "Noida Extension": 86,
+    "Sector 78, Noida": 60,
+    "Sector 75, Noida": 54,
+    "Sector 121, Noida": 51,
+    "Sector 133, Noida": 41,
+    "Sector 76, Noida": 41,
+    "Sector 134, Noida": 39,
+    "Sector 77, Noida": 34,
+    "Sector 43, Noida": 30,
+    "Sector 152, Noida": 28,
+    "Sector 104, Noida": 28,
+    "Sector 168, Noida": 23,
+    "Sector 74, Noida": 22,
+    "Sector 110, Noida": 22,
+    "Sector 93 A, Noida": 20,
+    "Sector 32, Noida": 15
+  },
+  "cleaning_rules": [
+    "Deduplicate by listing_id/PROP_ID.",
+    "Remove nonpositive price/area, invalid BHK (>10 or <=0), invalid coordinates, and area below 300 sqft.",
+    "Retain large/high-value properties but flag extreme area and price-per-sqft values.",
+    "Flag BHK-area mismatch for review.",
+    "Preserve carpet/built-up/super-built-up area basis for valuation normalization."
+  ]
+}

@@ -1,0 +1,59 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated combined dataset and reports
+data/combined/
+
+# Generated caches and experiment artifacts
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# CatBoost training logs
+catboost_info/
+
+# Generated Python and test artifacts
+.coverage
+htmlcov/
+
+# Generated investigation and profiling reports
+data/investigation/
+data/profiling/
+data/validation/
+data/audit/
+
+# Model evaluation outputs that can be regenerated
+data/models/*/diagnostics/
+data/models/*/test_predictions.csv
+data/models/*/feature_importance.csv
+data/models/*/hyperparameter_search_results.csv
+
+# Temporary Python artifacts
+.coverage
+htmlcov/

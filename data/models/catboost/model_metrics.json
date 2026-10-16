@@ -1,0 +1,15 @@
+{
+    "model": "CatBoostRegressor",
+    "algorithm": "CatBoost",
+    "iterations": 500,
+    "learning_rate": 0.05,
+    "depth": 6,
+    "train_rows": 5777,
+    "test_rows": 1445,
+    "mae_inr": 7752244.673883308,
+    "rmse_inr": 21677531.297444593,
+    "r2": 0.8133692528095788,
+    "mean_absolute_percentage_error": 17.00676812866612,
+    "median_absolute_percentage_error": 12.66225880313508,
+    "mean_prediction_error_inr": -1536613.8440144819
+}

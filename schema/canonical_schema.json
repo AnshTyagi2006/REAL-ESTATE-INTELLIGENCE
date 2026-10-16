@@ -1,0 +1,652 @@
+{
+  "schema": {
+    "canonical_fields": [
+      [
+        "property_id",
+        "string",
+        "CORE_IDENTITY",
+        "required",
+        "Stable internal property identifier."
+      ],
+      [
+        "listing_id",
+        "string",
+        "CORE_IDENTITY",
+        "required",
+        "Original source listing/property identifier."
+      ],
+      [
+        "source",
+        "string",
+        "SOURCE_METADATA",
+        "required",
+        "Source platform."
+      ],
+      [
+        "listing_url",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Listing URL."
+      ],
+      [
+        "property_name",
+        "string",
+        "CORE_IDENTITY",
+        "optional",
+        "Property/project/society display name."
+      ],
+      [
+        "record_type",
+        "string",
+        "CORE_IDENTITY",
+        "optional",
+        "Listing record type."
+      ],
+      [
+        "city",
+        "string",
+        "LOCATION",
+        "required",
+        "Market/city."
+      ],
+      [
+        "locality",
+        "string",
+        "LOCATION",
+        "required",
+        "Locality."
+      ],
+      [
+        "society",
+        "string",
+        "LOCATION",
+        "optional",
+        "Society/project/building."
+      ],
+      [
+        "latitude",
+        "float",
+        "LOCATION",
+        "required",
+        "Latitude."
+      ],
+      [
+        "longitude",
+        "float",
+        "LOCATION",
+        "required",
+        "Longitude."
+      ],
+      [
+        "property_type",
+        "string",
+        "PROPERTY",
+        "required",
+        "Standardized property type."
+      ],
+      [
+        "bedrooms",
+        "float",
+        "PROPERTY",
+        "required",
+        "Bedroom/BHK count."
+      ],
+      [
+        "bathrooms",
+        "float",
+        "PROPERTY",
+        "optional",
+        "Bathroom count."
+      ],
+      [
+        "balconies",
+        "float",
+        "PROPERTY",
+        "optional",
+        "Balcony count."
+      ],
+      [
+        "floor",
+        "float",
+        "PROPERTY",
+        "optional",
+        "Property floor."
+      ],
+      [
+        "total_floors",
+        "float",
+        "PROPERTY",
+        "optional",
+        "Total building floors."
+      ],
+      [
+        "furnishing",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Furnishing status."
+      ],
+      [
+        "property_age_years",
+        "float",
+        "PROPERTY",
+        "optional",
+        "Property age in years."
+      ],
+      [
+        "status",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Ready-to-move/under-construction/etc."
+      ],
+      [
+        "listing_category",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "Resale/new booking/etc."
+      ],
+      [
+        "seller_type",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "Owner/dealer/builder."
+      ],
+      [
+        "verified",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "Verification flag."
+      ],
+      [
+        "rera_registered",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "RERA flag."
+      ],
+      [
+        "rera_id",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "RERA identifier."
+      ],
+      [
+        "area_sqft",
+        "float",
+        "AREA",
+        "required",
+        "Primary listing area."
+      ],
+      [
+        "area_min_sqft",
+        "float",
+        "AREA",
+        "optional",
+        "Minimum area for range listings."
+      ],
+      [
+        "area_max_sqft",
+        "float",
+        "AREA",
+        "optional",
+        "Maximum area for range listings."
+      ],
+      [
+        "area_basis",
+        "string",
+        "AREA",
+        "required",
+        "Carpet/built-up/super-built-up/etc."
+      ],
+      [
+        "carpet_area_sqft",
+        "float",
+        "AREA",
+        "optional",
+        "Carpet area."
+      ],
+      [
+        "builtup_area_sqft",
+        "float",
+        "AREA",
+        "optional",
+        "Built-up area."
+      ],
+      [
+        "superbuiltup_area_sqft",
+        "float",
+        "AREA",
+        "optional",
+        "Super-built-up area."
+      ],
+      [
+        "price_inr",
+        "float",
+        "FINANCIAL",
+        "required",
+        "Asking price in INR."
+      ],
+      [
+        "price_min_inr",
+        "float",
+        "FINANCIAL",
+        "optional",
+        "Minimum asking price."
+      ],
+      [
+        "price_max_inr",
+        "float",
+        "FINANCIAL",
+        "optional",
+        "Maximum asking price."
+      ],
+      [
+        "price_per_sqft",
+        "float",
+        "FINANCIAL",
+        "required",
+        "Reported asking price per sqft."
+      ],
+      [
+        "parking_count",
+        "float",
+        "FEATURES",
+        "optional",
+        "Parking count."
+      ],
+      [
+        "amenities",
+        "string",
+        "FEATURES",
+        "optional",
+        "Amenities representation."
+      ],
+      [
+        "features",
+        "string",
+        "FEATURES",
+        "optional",
+        "Property features."
+      ],
+      [
+        "facing",
+        "string",
+        "FEATURES",
+        "optional",
+        "Facing direction."
+      ],
+      [
+        "overlooking",
+        "string",
+        "FEATURES",
+        "optional",
+        "Overlooking information."
+      ],
+      [
+        "nearby_landmarks_count",
+        "float",
+        "FEATURES",
+        "optional",
+        "Nearby landmark count."
+      ],
+      [
+        "description",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Listing description; retained for future NLP."
+      ],
+      [
+        "posted_date",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Original posted date."
+      ],
+      [
+        "updated_date",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Original updated date."
+      ],
+      [
+        "scraped_at",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Extraction timestamp."
+      ],
+      [
+        "source_page",
+        "float",
+        "SOURCE_METADATA",
+        "optional",
+        "Source page number."
+      ],
+      [
+        "quality_flags",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Existing quality flags."
+      ],
+      [
+        "configuration",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Original property configuration such as 3 BHK + Study."
+      ],
+      [
+        "product_type",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Source property/product type."
+      ],
+      [
+        "possession",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Possession information."
+      ],
+      [
+        "listing_type",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "Original listing type."
+      ],
+      [
+        "seller_class",
+        "string",
+        "TRANSACTION",
+        "optional",
+        "Source seller classification."
+      ],
+      [
+        "parking",
+        "string",
+        "FEATURES",
+        "optional",
+        "Original parking information."
+      ],
+      [
+        "reserved_parking",
+        "string",
+        "FEATURES",
+        "optional",
+        "Reserved parking information."
+      ],
+      [
+        "amenities_count",
+        "float",
+        "FEATURES",
+        "optional",
+        "Number of amenities reported by the source."
+      ],
+      [
+        "features_count",
+        "float",
+        "FEATURES",
+        "optional",
+        "Number of property features reported by the source."
+      ],
+      [
+        "builder",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Builder information."
+      ],
+      [
+        "builder_name",
+        "string",
+        "PROPERTY",
+        "optional",
+        "Builder/developer name."
+      ],
+      [
+        "seller_agent",
+        "string",
+        "SOURCE_METADATA",
+        "optional",
+        "Seller or agent information."
+      ]
+    ]
+  },
+  "aliases": {
+    "listing_id": [
+      "listing_id",
+      "spid",
+      "prop_id",
+      "property_id"
+    ],
+    "property_name": [
+      "property_name",
+      "property_title",
+      "name",
+      "building_name",
+      "society_name",
+      "project_name",
+      "proj_name"
+    ],
+    "record_type": [
+      "record_type"
+    ],
+    "source": [
+      "source"
+    ],
+    "listing_url": [
+      "listing_url",
+      "url"
+    ],
+    "city": [
+      "city",
+      "city_name",
+      "contact_city_name"
+    ],
+    "locality": [
+      "locality",
+      "locality_clean",
+      "locality_wo_city"
+    ],
+    "society": [
+      "society",
+      "society_name",
+      "building_name",
+      "project_name",
+      "proj_name"
+    ],
+    "latitude": [
+      "latitude",
+      "lat"
+    ],
+    "longitude": [
+      "longitude",
+      "lng",
+      "lon"
+    ],
+    "property_type": [
+      "property_type",
+      "property_category"
+    ],
+    "bedrooms": [
+      "bedrooms",
+      "bhk"
+    ],
+    "bathrooms": [
+      "bathrooms"
+    ],
+    "balconies": [
+      "balconies"
+    ],
+    "floor": [
+      "floor"
+    ],
+    "total_floors": [
+      "total_floors"
+    ],
+    "furnishing": [
+      "furnishing",
+      "furnishing_code"
+    ],
+    "property_age_years": [
+      "age_years",
+      "property_age"
+    ],
+    "status": [
+      "status",
+      "ready_to_move",
+      "under_construction"
+    ],
+    "listing_category": [
+      "listing_category",
+      "listing_type",
+      "resale"
+    ],
+    "seller_type": [
+      "seller_type",
+      "seller_class"
+    ],
+    "verified": [
+      "verified"
+    ],
+    "rera_registered": [
+      "rera_registered"
+    ],
+    "rera_id": [
+      "rera_id"
+    ],
+    "area_sqft": [
+      "area_sqft",
+      "area_sqft_model",
+      "localized_area_value"
+    ],
+    "area_min_sqft": [
+      "area_min_sqft"
+    ],
+    "area_max_sqft": [
+      "area_max_sqft"
+    ],
+    "area_basis": [
+      "area_type",
+      "area_basis"
+    ],
+    "carpet_area_sqft": [
+      "carpet_area_sqft",
+      "localized_carpet_area"
+    ],
+    "builtup_area_sqft": [
+      "builtup_area_sqft"
+    ],
+    "superbuiltup_area_sqft": [
+      "superbuiltup_area_sqft",
+      "localized_superbuiltup_area"
+    ],
+    "price_inr": [
+      "price_inr"
+    ],
+    "price_min_inr": [
+      "price_min_inr",
+      "min_price_inr"
+    ],
+    "price_max_inr": [
+      "price_max_inr",
+      "max_price_inr"
+    ],
+    "price_per_sqft": [
+      "price_per_sqft",
+      "localized_price_sqft"
+    ],
+    "parking_count": [
+      "parking_count"
+    ],
+    "amenities": [
+      "amenities_raw",
+      "amenities"
+    ],
+    "features": [
+      "features_raw",
+      "features"
+    ],
+    "facing": [
+      "facing",
+      "facing_code"
+    ],
+    "overlooking": [
+      "overlooking_raw",
+      "overlooking",
+      "view_overlooking"
+    ],
+    "nearby_landmarks_count": [
+      "nearby_landmarks_count",
+      "landmark_count"
+    ],
+    "description": [
+      "description"
+    ],
+    "posted_date": [
+      "posted_date",
+      "posting_date"
+    ],
+    "updated_date": [
+      "updated_date",
+      "update_date"
+    ],
+    "scraped_at": [
+      "scraped_at"
+    ],
+    "source_page": [
+      "source_page"
+    ],
+    "quality_flags": [
+      "quality_flags",
+      "_quality_flags"
+    ],
+    "configuration": [
+      "configuration"
+    ],
+    "product_type": [
+      "product_type"
+    ],
+    "possession": [
+      "possession"
+    ],
+    "listing_type": [
+      "listing_type"
+    ],
+    "seller_class": [
+      "seller_class"
+    ],
+    "parking": [
+      "parking"
+    ],
+    "reserved_parking": [
+      "reserved_parking"
+    ],
+    "amenities_count": [
+      "amenities_count"
+    ],
+    "features_count": [
+      "features_count"
+    ],
+    "builder": [
+      "builder"
+    ],
+    "builder_name": [
+      "builder_name"
+    ],
+    "seller_agent": [
+      "seller_agent"
+    ]
+  }
+}

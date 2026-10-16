@@ -1,0 +1,15 @@
+{
+    "model": "LGBMRegressor",
+    "algorithm": "LightGBM",
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "train_rows": 5777,
+    "test_rows": 1445,
+    "mae_inr": 6916525.278117579,
+    "rmse_inr": 19657704.35787854,
+    "r2": 0.8465280011918416,
+    "mean_absolute_percentage_error": 14.793868037544337,
+    "median_absolute_percentage_error": 10.329130281212318,
+    "mean_prediction_error_inr": -727971.561740056
+}

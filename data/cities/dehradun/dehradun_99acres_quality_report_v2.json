@@ -1,0 +1,73 @@
+{
+  "city": "Dehradun",
+  "source": "99acres",
+  "raw_records_loaded": 937,
+  "unique_property_ids": 937,
+  "duplicates_removed": 0,
+  "structurally_removed": 1,
+  "final_model_ready": 936,
+  "valuation_training_eligible": 926,
+  "retained_flagged": 10,
+  "flag_counts": {
+    "extreme_ppsf": 5,
+    "extreme_area": 4,
+    "bhk_area_mismatch": 1
+  },
+  "removed_ids": [
+    "O90717128"
+  ],
+  "removed_reasons": {
+    "O90717128": "invalid_price"
+  },
+  "area_basis_counts": {
+    "SUPERBUILTUP_AREA": 576,
+    "CARPET_AREA": 298,
+    "BUILTUP_AREA": 62
+  },
+  "bhk_counts": {
+    "1": 75,
+    "2": 342,
+    "3": 436,
+    "4": 76,
+    "5": 4,
+    "6": 2,
+    "10": 1
+  },
+  "top_localities": {
+    "Sahastradhara Road": 131,
+    "Kulhan": 88,
+    "Harrawala": 60,
+    "Doon IT Park": 53,
+    "Mussoorie Road": 48,
+    "Rajpur Road": 42,
+    "Canal Road": 27,
+    "Dalanwala": 27,
+    "GMS Road": 23,
+    "Jakhan": 21,
+    "Malsi": 18,
+    "Niranjanpur": 18,
+    "Rajpur": 17,
+    "Jhajra": 14,
+    "Mayur Vihar": 14,
+    "Haridwar Road": 14,
+    "Sewla Kalan": 14,
+    "Race Course": 11,
+    "Aman Vihar": 10,
+    "Govind Vihar": 9
+  },
+  "price_stats": {
+    "min": 1800000.0,
+    "median": 11600000.0,
+    "max": 135000000.0
+  },
+  "ppsf_stats": {
+    "min": 1333.0,
+    "median": 8000.5,
+    "max": 1833333.0
+  },
+  "area_stats": {
+    "min": 3.0,
+    "median": 1532.5,
+    "max": 6040.0
+  }
+}

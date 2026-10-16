@@ -1,0 +1,341 @@
+{
+  "dataset_name": "Real Estate Intelligence Master Dataset",
+  "source": "99acres city-level final model datasets supplied in master_dataset_inputs.zip",
+  "input_file_count": 14,
+  "input_files": [
+    {
+      "file": "bangalore_99acres_final_model_dataset.csv",
+      "market": "Bangalore",
+      "rows": 1041,
+      "columns": 49
+    },
+    {
+      "file": "chandigarh_99acres_final_model_dataset_v2.csv",
+      "market": "Chandigarh",
+      "rows": 1683,
+      "columns": 49
+    },
+    {
+      "file": "dehradun_99acres_final_model_dataset_v2.csv",
+      "market": "Dehradun",
+      "rows": 936,
+      "columns": 49
+    },
+    {
+      "file": "delhi_99acres_final_model_dataset_v2.csv",
+      "market": "Delhi",
+      "rows": 1335,
+      "columns": 41
+    },
+    {
+      "file": "faridabad_99acres_final_model_dataset_v2.csv",
+      "market": "Faridabad",
+      "rows": 603,
+      "columns": 41
+    },
+    {
+      "file": "ghaziabad_99acres_final_model_dataset_v2.csv",
+      "market": "Ghaziabad",
+      "rows": 876,
+      "columns": 41
+    },
+    {
+      "file": "greater_noida_99acres_final_model_dataset_v2.csv",
+      "market": "Greater Noida",
+      "rows": 94,
+      "columns": 41
+    },
+    {
+      "file": "gurgaon_99acres_final_model_dataset.csv",
+      "market": "Gurgaon",
+      "rows": 1009,
+      "columns": 49
+    },
+    {
+      "file": "hyderabad_99acres_final_model_dataset.csv",
+      "market": "Hyderabad",
+      "rows": 1376,
+      "columns": 49
+    },
+    {
+      "file": "kolkata_99acres_final_model_dataset (1).csv",
+      "market": "Kolkata",
+      "rows": 1381,
+      "columns": 50
+    },
+    {
+      "file": "mohali_99acres_final_model_dataset_v2.csv",
+      "market": "Mohali",
+      "rows": 1134,
+      "columns": 49
+    },
+    {
+      "file": "mumbai_99acres_final_model_dataset.csv",
+      "market": "Mumbai",
+      "rows": 1023,
+      "columns": 47
+    },
+    {
+      "file": "noida_99acres_final_model_dataset_v2.csv",
+      "market": "Noida",
+      "rows": 1247,
+      "columns": 41
+    },
+    {
+      "file": "panchkula_99acres_final_model_dataset_v2.csv",
+      "market": "Panchkula",
+      "rows": 323,
+      "columns": 49
+    }
+  ],
+  "input_total_rows": 14061,
+  "master_rows": 13761,
+  "master_unique_listing_ids": 13761,
+  "duplicate_rows_removed_by_listing_id": 300,
+  "duplicate_listing_ids": 300,
+  "duplicate_breakdown": {
+    "same_market_duplicate_ids": 0,
+    "cross_market_duplicate_ids": 300
+  },
+  "schema": {
+    "master_column_count": 58,
+    "union_of_input_columns": 98,
+    "columns_common_to_all_inputs": 15,
+    "common_columns": [
+      "balconies",
+      "bathrooms",
+      "city",
+      "description",
+      "floor",
+      "latitude",
+      "listing_id",
+      "listing_url",
+      "locality",
+      "longitude",
+      "price_per_sqft",
+      "property_name",
+      "rera_id",
+      "society",
+      "total_floors"
+    ],
+    "master_columns": [
+      "listing_id",
+      "source_property_id",
+      "source_markets",
+      "source_market",
+      "property_city_original",
+      "record_type",
+      "property_name",
+      "property_title",
+      "listing_type",
+      "city",
+      "locality",
+      "locality_clean",
+      "society",
+      "property_type",
+      "configuration",
+      "bedrooms",
+      "bathrooms",
+      "balconies",
+      "price_min_inr",
+      "price_max_inr",
+      "price_inr",
+      "price_per_sqft",
+      "area_min_sqft",
+      "area_max_sqft",
+      "area_sqft_model",
+      "area_basis",
+      "carpet_area_sqft",
+      "builtup_area_sqft",
+      "superbuiltup_area_sqft",
+      "status",
+      "possession",
+      "floor",
+      "total_floors",
+      "facing",
+      "overlooking",
+      "furnishing",
+      "property_age",
+      "parking",
+      "rera_id",
+      "rera_registered",
+      "verified",
+      "seller_type",
+      "seller_name",
+      "seller_company",
+      "builder",
+      "amenities",
+      "features",
+      "description",
+      "latitude",
+      "longitude",
+      "listing_url",
+      "posted_at",
+      "updated_at",
+      "scraped_at",
+      "source",
+      "source_page",
+      "quality_flags",
+      "valuation_training_eligible"
+    ]
+  },
+  "city_summary": [
+    {
+      "city": "Bangalore",
+      "listings": 1041,
+      "valuation_eligible": 1041,
+      "flagged": 0,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Chandigarh",
+      "listings": 1683,
+      "valuation_eligible": 1665,
+      "flagged": 18,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 1
+    },
+    {
+      "city": "Dehradun",
+      "listings": 936,
+      "valuation_eligible": 926,
+      "flagged": 10,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Delhi",
+      "listings": 1335,
+      "valuation_eligible": 842,
+      "flagged": 493,
+      "missing_price": 0,
+      "missing_area": 1335,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Faridabad",
+      "listings": 603,
+      "valuation_eligible": 486,
+      "flagged": 117,
+      "missing_price": 0,
+      "missing_area": 603,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Ghaziabad",
+      "listings": 876,
+      "valuation_eligible": 857,
+      "flagged": 19,
+      "missing_price": 0,
+      "missing_area": 876,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Greater Noida",
+      "listings": 94,
+      "valuation_eligible": 92,
+      "flagged": 2,
+      "missing_price": 0,
+      "missing_area": 94,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Gurgaon",
+      "listings": 1009,
+      "valuation_eligible": 1003,
+      "flagged": 6,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Hyderabad",
+      "listings": 1376,
+      "valuation_eligible": 1357,
+      "flagged": 19,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Kolkata",
+      "listings": 1381,
+      "valuation_eligible": 1360,
+      "flagged": 21,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Mohali",
+      "listings": 840,
+      "valuation_eligible": 830,
+      "flagged": 10,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 1
+    },
+    {
+      "city": "Mumbai",
+      "listings": 1023,
+      "valuation_eligible": 1017,
+      "flagged": 6,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Noida",
+      "listings": 1241,
+      "valuation_eligible": 1221,
+      "flagged": 20,
+      "missing_price": 0,
+      "missing_area": 1241,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    },
+    {
+      "city": "Panchkula",
+      "listings": 323,
+      "valuation_eligible": 320,
+      "flagged": 3,
+      "missing_price": 0,
+      "missing_area": 0,
+      "missing_ppsf": 0,
+      "missing_coordinates": 0
+    }
+  ],
+  "quality": {
+    "flagged_records": 744,
+    "valuation_training_eligible": 13017,
+    "missing_price": 0,
+    "missing_area": 4149,
+    "missing_ppsf": 0,
+    "missing_coordinates": 4,
+    "invalid_coordinates": 0
+  },
+  "important_notes": [
+    "The master layer does not perform a second round of outlier removal; city-level final-model cleaning decisions are preserved.",
+    "city is standardized to the city folder/market used for the extraction, while property_city_original preserves the value present in each source CSV.",
+    "source_markets records every market file in which a duplicate listing_id appeared.",
+    "300 duplicate listing_id rows were found across the 14 input files; 294 were Chandigarh/Mohali overlaps and 6 were Noida/Greater Noida overlaps.",
+    "Area basis is preserved because carpet, built-up, super-built-up and super-area measurements are not interchangeable for valuation.",
+    "The master dataset is ready for the next validation/standardization phase, but locality normalization and valuation-specific feature engineering have not yet been performed."
+  ]
+}

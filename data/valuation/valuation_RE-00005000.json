@@ -1,0 +1,17 @@
+{
+    "property_id": "RE-00005000",
+    "city": "Faridabad",
+    "locality": "Greenfield Colony, Faridabad",
+    "valuation_area_sqft": 2071.0,
+    "bedrooms": 4.0,
+    "bathrooms": 4.0,
+    "asking_price_inr": 25000000.0,
+    "ml_value": 24235398.99138879,
+    "comparable_value": 22099690.631806068,
+    "locality_value": 20296142.288330927,
+    "final_estimated_value": 23009585.710775655,
+    "asking_price_premium_pct": 8.650369955562526,
+    "price_signal": "Moderate premium",
+    "comparable_count": 20,
+    "locality_property_count": 38
+}

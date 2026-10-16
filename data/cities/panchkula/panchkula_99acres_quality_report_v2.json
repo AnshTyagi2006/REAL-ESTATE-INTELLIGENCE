@@ -1,0 +1,103 @@
+{
+  "city": "Panchkula",
+  "source": "99acres",
+  "source_url": "https://www.99acres.com/flats-in-panchkula-ffid",
+  "raw_records": 324,
+  "unique_properties": 324,
+  "duplicates_removed": 0,
+  "structurally_removed": 1,
+  "final_model_ready": 323,
+  "valuation_training_eligible": 320,
+  "flagged_retained": 3,
+  "removed_records": [
+    {
+      "listing_id": "Y93601212",
+      "reason": "area_below_300_sqft"
+    }
+  ],
+  "flag_counts": {
+    "extreme_area": 2,
+    "extreme_ppsf": 1
+  },
+  "area_basis_counts": {
+    "SUPERBUILTUP_AREA": 194,
+    "CARPET_AREA": 118,
+    "BUILTUP_AREA": 11
+  },
+  "price_stats": {
+    "count": 323.0,
+    "mean": 20474649.03095975,
+    "std": 13406734.140431838,
+    "min": 2450000.0,
+    "25%": 10500000.0,
+    "50%": 18000000.0,
+    "75%": 27650000.0,
+    "max": 129000000.0
+  },
+  "ppsf_stats": {
+    "count": 323.0,
+    "mean": 24649.953560371516,
+    "std": 249890.6282548371,
+    "min": 3232.0,
+    "25%": 6678.5,
+    "50%": 9643.0,
+    "75%": 12044.0,
+    "max": 4500000.0
+  },
+  "area_stats": {
+    "count": 323.0,
+    "mean": 2051.8637774380873,
+    "std": 1001.0559887136033,
+    "min": 475.0,
+    "25%": 1575.0,
+    "50%": 1850.0,
+    "75%": 2300.0,
+    "max": 13500.00000000135
+  },
+  "bhk_counts": {
+    "1": 3,
+    "2": 20,
+    "3": 220,
+    "4": 76,
+    "5": 3,
+    "6": 1
+  },
+  "property_type_counts": {
+    "Residential Apartment": 322,
+    "Penthouse": 1
+  },
+  "status_counts": {
+    "Ready To Move": 264,
+    "Under Construction": 59
+  },
+  "top_localities": {
+    "Peer Muchalla": 100,
+    "Sector 20 Panchkula": 88,
+    "Sector 3 Panchkula": 77,
+    "Sector 4 Panchkula": 22,
+    "Sector 27 Panchkula": 5,
+    "Kishanpura": 4,
+    "Sector 24 Panchkula": 4,
+    "Mansa Devi Complex": 3,
+    "Sector 2 Panchkula": 3,
+    "MDC Sector 6": 3,
+    "Sector 31 Panchkula": 2,
+    "MDC Sector 5": 2,
+    "Baltana": 2,
+    "Sector 5 Panchkula": 1,
+    "Mdc Sector 4": 1,
+    "Part 2 Sector 20 Panchkula": 1,
+    "gh 37 uco hut": 1,
+    "om sai homes- stellar homes": 1,
+    "Pinjore": 1,
+    "ghs 57": 1,
+    "westwoods sector 23 panchkula": 1
+  },
+  "notes": [
+    "Processed directly from the uploaded raw individual-property JSON.",
+    "Area basis preserved; model area uses the declared basis-specific area.",
+    "Listings below 300 sqft were treated as structurally invalid for this project and removed.",
+    "Legitimate large properties were retained and flagged rather than deleted.",
+    "Listings with quality flags are excluded from the initial valuation-training baseline."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "model": "XGBRegressor",
+    "algorithm": "XGBoost",
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "train_rows": 5777,
+    "test_rows": 1445,
+    "mae_inr": 7149514.87716263,
+    "rmse_inr": 19523895.44102641,
+    "r2": 0.8486102411225256,
+    "mean_absolute_percentage_error": 16.067945052969776,
+    "median_absolute_percentage_error": 11.82848717948718,
+    "mean_prediction_error_inr": -1421448.2031141869
+}

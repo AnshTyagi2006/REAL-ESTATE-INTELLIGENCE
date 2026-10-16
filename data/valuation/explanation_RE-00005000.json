@@ -1,0 +1,155 @@
+{
+    "property_id": "RE-00005000",
+    "ml_predicted_value": 24235398.991388015,
+    "base_prediction_log": 17.07739773856986,
+    "top_positive_factors": [
+        {
+            "feature": "bathrooms",
+            "label": "Bathrooms",
+            "value": "4.0",
+            "shap_value": 0.22877775858209748,
+            "direction": "increases",
+            "absolute_impact": 0.22877775858209748
+        },
+        {
+            "feature": "bedrooms",
+            "label": "Bedrooms",
+            "value": "4.0",
+            "shap_value": 0.15805772103833912,
+            "direction": "increases",
+            "absolute_impact": 0.15805772103833912
+        },
+        {
+            "feature": "valuation_area_sqft",
+            "label": "Property area",
+            "value": "2071.0",
+            "shap_value": 0.11735726297639607,
+            "direction": "increases",
+            "absolute_impact": 0.11735726297639607
+        }
+    ],
+    "top_negative_factors": [
+        {
+            "feature": "city",
+            "label": "City",
+            "value": "Faridabad",
+            "shap_value": -0.21629155403984832,
+            "direction": "decreases",
+            "absolute_impact": 0.21629155403984832
+        },
+        {
+            "feature": "locality",
+            "label": "Locality",
+            "value": "Greenfield Colony, Faridabad",
+            "shap_value": -0.10614628423694482,
+            "direction": "decreases",
+            "absolute_impact": 0.10614628423694482
+        },
+        {
+            "feature": "total_floors",
+            "label": "Total floors",
+            "value": "4.0",
+            "shap_value": -0.09371247228303226,
+            "direction": "decreases",
+            "absolute_impact": 0.09371247228303226
+        },
+        {
+            "feature": "latitude",
+            "label": "Location latitude",
+            "value": "28.4633692",
+            "shap_value": -0.07680465182999122,
+            "direction": "decreases",
+            "absolute_impact": 0.07680465182999122
+        },
+        {
+            "feature": "longitude",
+            "label": "Location longitude",
+            "value": "77.2940425",
+            "shap_value": -0.06387392181814444,
+            "direction": "decreases",
+            "absolute_impact": 0.06387392181814444
+        }
+    ],
+    "all_feature_contributions": [
+        {
+            "feature": "bathrooms",
+            "label": "Bathrooms",
+            "value": "4.0",
+            "shap_value": 0.22877775858209748,
+            "direction": "increases",
+            "absolute_impact": 0.22877775858209748
+        },
+        {
+            "feature": "city",
+            "label": "City",
+            "value": "Faridabad",
+            "shap_value": -0.21629155403984832,
+            "direction": "decreases",
+            "absolute_impact": 0.21629155403984832
+        },
+        {
+            "feature": "bedrooms",
+            "label": "Bedrooms",
+            "value": "4.0",
+            "shap_value": 0.15805772103833912,
+            "direction": "increases",
+            "absolute_impact": 0.15805772103833912
+        },
+        {
+            "feature": "valuation_area_sqft",
+            "label": "Property area",
+            "value": "2071.0",
+            "shap_value": 0.11735726297639607,
+            "direction": "increases",
+            "absolute_impact": 0.11735726297639607
+        },
+        {
+            "feature": "locality",
+            "label": "Locality",
+            "value": "Greenfield Colony, Faridabad",
+            "shap_value": -0.10614628423694482,
+            "direction": "decreases",
+            "absolute_impact": 0.10614628423694482
+        },
+        {
+            "feature": "total_floors",
+            "label": "Total floors",
+            "value": "4.0",
+            "shap_value": -0.09371247228303226,
+            "direction": "decreases",
+            "absolute_impact": 0.09371247228303226
+        },
+        {
+            "feature": "latitude",
+            "label": "Location latitude",
+            "value": "28.4633692",
+            "shap_value": -0.07680465182999122,
+            "direction": "decreases",
+            "absolute_impact": 0.07680465182999122
+        },
+        {
+            "feature": "longitude",
+            "label": "Location longitude",
+            "value": "77.2940425",
+            "shap_value": -0.06387392181814444,
+            "direction": "decreases",
+            "absolute_impact": 0.06387392181814444
+        },
+        {
+            "feature": "floor",
+            "label": "Floor",
+            "value": "1.0",
+            "shap_value": -0.01640426682342311,
+            "direction": "decreases",
+            "absolute_impact": 0.01640426682342311
+        },
+        {
+            "feature": "property_type",
+            "label": "Property type",
+            "value": null,
+            "shap_value": -0.005032398310577393,
+            "direction": "decreases",
+            "absolute_impact": 0.005032398310577393
+        }
+    ]
+}

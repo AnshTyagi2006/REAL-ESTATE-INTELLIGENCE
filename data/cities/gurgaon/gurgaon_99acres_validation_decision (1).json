@@ -1,0 +1,5 @@
+{
+  "model_ready_rows": 1009,
+  "flagged_rows_retained": 6,
+  "recommendation": "Retain flagged market extremes for now; exclude them only from baseline valuation training until manually reviewed."
+}

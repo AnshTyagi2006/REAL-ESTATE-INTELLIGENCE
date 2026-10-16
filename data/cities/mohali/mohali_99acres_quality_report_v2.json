@@ -1,0 +1,221 @@
+{
+  "source": {
+    "city": "Mohali",
+    "source": "99acres",
+    "source_url": "https://www.99acres.com/flats-in-mohali-ffid",
+    "started_at": "2026-09-17T07:02:04.361Z",
+    "extracted_at": "2026-09-17T07:04:09.599Z",
+    "max_pages": 1200,
+    "pages_with_data": 48,
+    "pages_without_data": 8,
+    "total_raw_records": 1202,
+    "total_individual_records_seen": 1145,
+    "project_records_skipped": 57,
+    "total_unique_individual_properties": 1145,
+    "duplicate_properties_removed": 0,
+    "property_type_counts": {
+      "Residential Apartment": 1133,
+      "Penthouse": 5,
+      "Duplex Residential Apartment": 7
+    },
+    "bhk_counts": {
+      "1": 35,
+      "2": 270,
+      "3": 701,
+      "4": 128,
+      "5": 8,
+      "6": 1,
+      "9": 1,
+      "15": 1
+    },
+    "area_type_counts": {
+      "SUPERBUILTUP_AREA": 763,
+      "CARPET_AREA": 329,
+      "BUILTUP_AREA": 53
+    },
+    "status_counts": {
+      "ready_to_move": 1097,
+      "under_construction": 41,
+      "resale": 1145,
+      "new_booking": 0
+    },
+    "invalid_price_records": 0,
+    "invalid_area_records": 2290,
+    "rera_tagged": 1145,
+    "top_localities": {
+      "Zirakpur": 270,
+      "Kharar": 110,
+      "Sector 127 Mohali": 82,
+      "Sector 82 Mohali": 77,
+      "Sector 115 Mohali": 74,
+      "Sector 66b Mohali": 65,
+      "Sector 66A Mohali": 51,
+      "Sector 91 Mohali": 37,
+      "Sector 88 Mohali": 35,
+      "Sector 126 Mohali": 32,
+      "Dhakoli": 30,
+      "Aerocity": 27,
+      "Sector 85 Mohali": 22,
+      "Sector 113 Mohali": 15,
+      "Sector 117 Mohali ": 12,
+      "Sector 74A Mohali": 11,
+      "Sector 116 Mohali": 11,
+      "Sector 125 Mohali": 11,
+      "Sector 99 Mohali": 10,
+      "Sunny Enclave": 8,
+      "Kharar Landran Road": 8,
+      "Kurali": 7,
+      "Sector 66 Mohali": 7,
+      "Sector 92 Mohali": 6,
+      "PR7 Road": 6
+    }
+  },
+  "raw_individual_records": 1145,
+  "unique_property_ids": 1145,
+  "duplicates_removed": 0,
+  "structurally_removed": 11,
+  "final_model_ready": 1134,
+  "valuation_training_eligible": 1123,
+  "retained_flagged": 11,
+  "removed_records": [
+    [
+      "K94200384",
+      "area_below_300"
+    ],
+    [
+      "H94124320",
+      "area_below_300"
+    ],
+    [
+      "R94100966",
+      "area_below_300"
+    ],
+    [
+      "E93113328",
+      "area_below_300"
+    ],
+    [
+      "H92922650",
+      "area_below_300"
+    ],
+    [
+      "U92747464",
+      "area_below_300"
+    ],
+    [
+      "F92726222",
+      "area_below_300"
+    ],
+    [
+      "T92680338",
+      "area_below_300"
+    ],
+    [
+      "L92630172",
+      "invalid_bhk"
+    ],
+    [
+      "N92624674",
+      "area_below_300"
+    ],
+    [
+      "S56457570",
+      "area_below_300"
+    ]
+  ],
+  "flag_counts": {
+    "extreme_area_high": 5,
+    "extreme_ppsf_high": 3,
+    "bhk_area_mismatch": 2,
+    "extreme_ppsf_high;bhk_area_mismatch": 1
+  },
+  "area_basis_counts": {
+    "SUPERBUILTUP_AREA": 763,
+    "CARPET_AREA": 318,
+    "BUILTUP_AREA": 53
+  },
+  "price_stats_inr": {
+    "count": 1134.0,
+    "mean": 13801061.508818341,
+    "std": 10161095.493438415,
+    "min": 2100000.0,
+    "25%": 6600000.0,
+    "50%": 11000000.0,
+    "75%": 17500000.0,
+    "max": 83000000.0
+  },
+  "ppsf_stats": {
+    "count": 1134.0,
+    "mean": 13626.626984126984,
+    "std": 79503.37045509707,
+    "min": 391.0,
+    "25%": 5286.5,
+    "50%": 7500.0,
+    "75%": 10193.75,
+    "max": 2375000.0
+  },
+  "area_stats_sqft": {
+    "count": 1134.0,
+    "mean": 1787.2260061072661,
+    "std": 837.5884515823686,
+    "min": 382.50000000003826,
+    "25%": 1249.0,
+    "50%": 1685.0,
+    "75%": 2069.0,
+    "max": 12503.0
+  },
+  "bhk_counts": {
+    "1.0": 33,
+    "2.0": 265,
+    "3.0": 698,
+    "4.0": 128,
+    "5.0": 8,
+    "6.0": 1,
+    "9.0": 1
+  },
+  "property_type_counts": {
+    "Residential Apartment": 1122,
+    "Duplex Residential Apartment": 7,
+    "Penthouse": 5
+  },
+  "status_counts": {
+    "Ready To Move": 1086,
+    "Under Construction": 41,
+    "": 7
+  },
+  "top_localities": {
+    "Zirakpur": 271,
+    "Kharar": 108,
+    "Sector 127 Mohali": 82,
+    "Sector 82 Mohali": 77,
+    "Sector 115 Mohali": 74,
+    "Sector 66B Mohali": 65,
+    "Sector 66A Mohali": 51,
+    "Sector 91 Mohali": 37,
+    "Sector 88 Mohali": 35,
+    "Sector 126 Mohali": 32,
+    "Dhakoli": 29,
+    "Aerocity": 27,
+    "Sector 85 Mohali": 22,
+    "Sector 113 Mohali": 15,
+    "Sector 117 Mohali": 12,
+    "Sector 74A Mohali": 11,
+    "Sector 116 Mohali": 11,
+    "Sector 99 Mohali": 10,
+    "Sector 125 Mohali": 10,
+    "Sunny Enclave": 8,
+    "Kurali": 7,
+    "Sector 66 Mohali": 7,
+    "Kharar Landran Road": 7,
+    "Sector 127 Kharar": 6,
+    "Sector 92 Mohali": 6
+  },
+  "notes": [
+    "Projects were excluded upstream; this dataset contains individual property listings.",
+    "Area extraction prioritizes the source's *_SQFT fields when available because some raw numeric area fields are inconsistent with the localized sqft fields.",
+    "Listings with nonpositive price/area or BHK outside 1-10 were structurally removed.",
+    "Legitimate large listings (>5000 sqft) and unusually high price-per-sqft listings were retained and flagged rather than silently deleted.",
+    "Mixed area bases (carpet/super built-up/built-up) are preserved and must be controlled separately in valuation modeling.",
+    "The extraction report's invalid_area_records count is not used as a cleaning decision because it is inconsistent with the record count."
+  ]
+}

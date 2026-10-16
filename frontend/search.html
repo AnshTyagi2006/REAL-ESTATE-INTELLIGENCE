@@ -1,0 +1,645 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#f6fbff" />
+
+    <meta
+
+      name="description"
+
+      content="Explore the indexed property market with Real Estate Intelligence — search by location, price, BHK, area and property characteristics."
+
+    />
+
+    <title>Properties | Real Estate Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="/css/search.css?v=dataset-locality-sync-20261014" />
+
+  </head>
+
+  <body>
+
+    <div class="app-shell" id="top">
+
+      <!-- ============ HERO ============ -->
+
+      <header class="hero">
+
+        <nav class="top-nav" aria-label="Main navigation">
+
+          <a class="brand" href="#top" data-nav="Home" aria-label="Real Estate Intelligence home">
+
+            <span class="brand-mark">RE</span>
+
+            <span class="brand-name">Real Estate Intelligence</span>
+
+          </a>
+
+
+
+          <div class="nav-links">
+
+            <a href="/home" class="nav-link" data-nav="Home">Home</a>
+
+            <a href="#properties" class="nav-link is-active" data-nav="Properties" aria-current="page">Properties</a>
+
+            <a href="/market" class="nav-link" data-nav="Market">Market</a>
+
+          </div>
+
+
+
+          <div class="nav-actions header-actions">
+
+            <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to dark theme" title="Switch theme">
+
+              <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z" /></svg>
+
+              <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+
+            </button>
+</div>
+
+        </nav>
+
+
+
+        <div class="hero-copy">
+
+          <h1>Find your next <em>property.</em></h1>
+
+          <div class="eyebrow"><span></span>Property Search</div>
+
+          <p>Search the indexed property market by location, price, BHK, area and property characteristics.</p>
+
+        </div>
+
+
+
+        <form class="quick-search" id="quickSearch" aria-label="Search properties">
+
+          <div class="quick-field autocomplete-field" id="cityAutocomplete">
+
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+
+              <path d="M19 10.1c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z" fill="currentColor" />
+
+              <circle cx="12" cy="10" r="2.1" fill="#fff" />
+
+            </svg>
+
+            <label class="visually-hidden" for="heroLocation">City (required)</label>
+
+            <input id="heroLocation" name="city" type="text" role="combobox" aria-autocomplete="list"
+
+              aria-controls="citySuggestions" aria-expanded="false" autocomplete="off" placeholder="Choose a city"
+
+              value="Gurgaon" required />
+
+            <ul class="autocomplete-menu" id="citySuggestions" role="listbox" aria-label="Matching cities" hidden></ul>
+
+          </div>
+
+
+
+          <div class="quick-field locality-field autocomplete-field" id="localityAutocomplete">
+
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="M19 10.1c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2" />
+
+            </svg>
+
+            <label class="visually-hidden" for="heroLocality">Locality (optional)</label>
+
+            <input id="heroLocality" name="locality" type="text" role="combobox" aria-autocomplete="list"
+
+              aria-controls="localitySuggestions" aria-expanded="false" autocomplete="off" placeholder="Any locality"
+
+              disabled />
+
+            <ul class="autocomplete-menu" id="localitySuggestions" role="listbox" aria-label="Matching localities" hidden></ul>
+
+          </div>
+
+
+
+          <label class="quick-field">
+
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="M6 5h12M6 9h12M8 5c4.8 0 6.5 1.7 6.5 4s-1.7 4-6.5 4l8 7" />
+
+            </svg>
+
+            <select aria-label="Budget" id="heroBudget">
+
+              <option value="custom" disabled>Custom range</option>
+
+              <option value="any">Any Budget</option>
+
+              <option value="under50">Under ₹50 L</option>
+
+              <option value="under100">Under ₹1 Cr</option>
+
+              <option value="under200">Under ₹2 Cr</option>
+
+              <option value="under500">Under ₹5 Cr</option>
+
+            </select>
+
+            <svg class="field-chevron" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="m6 9 6 6 6-6" />
+
+            </svg>
+
+          </label>
+
+
+
+          <label class="quick-field">
+
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="m3.5 10 8.5-7 8.5 7" />
+
+              <path d="M5.5 9.5v11h13v-11M9.5 20.5v-7h5v7M11 7h2" />
+
+            </svg>
+
+            <select aria-label="Bedrooms" id="heroBhk">
+
+              <option value="0">Any BHK</option>
+
+              <option value="1">1 BHK</option>
+
+              <option value="2">2 BHK</option>
+
+              <option value="3">3 BHK</option>
+
+              <option value="4">4 BHK</option>
+
+              <option value="5">5+ BHK</option>
+
+            </select>
+
+            <svg class="field-chevron" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="m6 9 6 6 6-6" />
+
+            </svg>
+
+          </label>
+
+
+
+          <label class="quick-field">
+
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="M4 21V7l7-4v18M11 9h9v12M2.5 21h19" />
+
+              <path d="M7 8.5h1M7 12h1M7 15.5h1M14 12h1M17 12h1M14 15.5h1M17 15.5h1" />
+
+            </svg>
+
+            <select aria-label="Property type" id="heroType">
+
+              <option value="all">All Property Types</option>
+
+              <option value="Apartment">Apartment</option>
+
+              <option value="Builder Floor">Builder Floor</option>
+
+              <option value="Villa">Villa</option>
+
+              <option value="House">House</option>
+
+              <option value="Plot / Land">Plot / Land</option>
+
+              <option value="Commercial">Commercial</option>
+
+            </select>
+
+            <svg class="field-chevron" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="m6 9 6 6 6-6" />
+
+            </svg>
+
+          </label>
+
+
+
+          <button class="quick-submit" type="submit">
+
+            Search Properties
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <path d="M4 12h15M13 6l6 6-6 6" />
+
+            </svg>
+
+          </button>
+
+        </form>
+
+      </header>
+
+
+
+      <!-- ============ CATALOG ============ -->
+
+      <main class="catalog" id="properties">
+
+        <!-- Sidebar filters -->
+
+        <aside class="filter-panel" id="filterPanel" aria-label="Property filters">
+
+          <div class="filter-heading">
+
+            <h2>Filters</h2>
+
+            <button type="button" class="reset-button" id="resetFilters">Reset All</button>
+
+            <button type="button" class="mobile-filter-toggle" id="mobileFilterToggle" aria-expanded="false">
+
+              Show filters
+
+            </button>
+
+          </div>
+
+
+
+          <div class="filter-content">
+
+            <section class="filter-group">
+
+              <h3>
+
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+
+                  <path d="M19 10.1c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z" fill="currentColor" />
+
+                  <circle cx="12" cy="10" r="2.1" fill="#fff" />
+
+                </svg>
+
+                Location
+
+              </h3>
+
+              <label class="sidebar-select">
+
+                <span class="visually-hidden">Choose a location</span>
+
+                <select id="sidebarLocation">
+
+                  <option value="Gurgaon">Gurgaon</option>
+
+                  <option value="Delhi">Delhi</option>
+
+                  <option value="Noida">Noida</option>
+
+                  <option value="Bengaluru">Bengaluru</option>
+
+                  <option value="Mumbai">Mumbai</option>
+
+                </select>
+
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="m6 9 6 6 6-6" />
+
+                </svg>
+
+              </label>
+
+            </section>
+
+
+
+            <section class="filter-group budget-filter">
+
+              <h3>
+
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M6 5h12M6 9h12M8 5c4.8 0 6.5 1.7 6.5 4s-1.7 4-6.5 4l8 7" />
+
+                </svg>
+
+                Budget (₹ Lakh)
+
+              </h3>
+
+              <div class="range-control">
+
+                <span class="range-start" aria-hidden="true"></span>
+
+                <input
+
+                  type="range"
+
+                  min="0"
+
+                  max="500"
+
+                  step="10"
+
+                  value="500"
+
+                  id="budgetRange"
+
+                  aria-label="Maximum budget in lakh rupees"
+
+                />
+
+              </div>
+
+              <div class="range-labels"><span>0 L</span><span id="budgetMaxLabel">500+ L</span></div>
+
+            </section>
+
+
+
+            <section class="filter-group bedroom-filter">
+
+              <h3>
+
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M3 18.5v-9M21 18.5v-6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v6M3 15h18M6 10V7.5a1.5 1.5 0 0 1 3 0V10" />
+
+                  <path d="M3 19.5v-1M21 19.5v-1" />
+
+                </svg>
+
+                Bedrooms
+
+              </h3>
+
+              <div class="bedroom-options" id="bedroomOptions" role="group" aria-label="Filter by bedrooms">
+
+                <button type="button" data-bhk="1" aria-pressed="false">1 BHK</button>
+
+                <button type="button" data-bhk="2" aria-pressed="false">2 BHK</button>
+
+                <button type="button" data-bhk="3" aria-pressed="false">3 BHK</button>
+
+                <button type="button" data-bhk="4" aria-pressed="false">4 BHK</button>
+
+                <button type="button" data-bhk="5" aria-pressed="false">5+ BHK</button>
+
+              </div>
+
+            </section>
+
+
+
+            <section class="filter-group area-filter">
+
+              <h3>
+
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M4 7.5h6.5V14H4zM13.5 4h6.5v6.5h-6.5zM13.5 13.5H20V20h-6.5z" />
+
+                  <path d="M6 9.5h2M15.5 6h2M15.5 15.5h2" />
+
+                </svg>
+
+                Area (sq.ft.)
+
+              </h3>
+
+              <div class="area-options" id="areaOptions" role="group" aria-label="Filter by floor area">
+
+                <button type="button" data-area-min="0" data-area-max="0" aria-pressed="true">Any</button>
+
+                <button type="button" data-area-min="0" data-area-max="1000" aria-pressed="false">Under 1,000</button>
+
+                <button type="button" data-area-min="1000" data-area-max="1500" aria-pressed="false">1,000–1,500</button>
+
+                <button type="button" data-area-min="1500" data-area-max="2500" aria-pressed="false">1,500–2,500</button>
+
+                <button type="button" data-area-min="2500" data-area-max="0" aria-pressed="false">2,500+</button>
+
+              </div>
+
+            </section>
+
+
+
+            <section class="filter-group property-type-filter">
+
+              <h3>
+
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M4 21V7l7-4v18M11 9h9v12M2.5 21h19" />
+
+                  <path d="M7 8.5h1M7 12h1M7 15.5h1M14 12h1M17 12h1M14 15.5h1M17 15.5h1" />
+
+                </svg>
+
+                Property Type
+
+              </h3>
+
+              <div class="type-options" id="typeOptions"></div>
+
+            </section>
+
+
+
+            <button class="sidebar-submit" type="button" id="sidebarSubmit">
+
+              Search Properties
+
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <path d="M4 12h15M13 6l6 6-6 6" />
+
+              </svg>
+
+            </button>
+
+          </div>
+
+        </aside>
+
+
+
+        <!-- Results -->
+
+        <section class="results-area" id="results" aria-label="Property results">
+
+          <div class="results-toolbar reveal-on-scroll">
+
+            <div class="results-title">
+
+              <h2 id="resultCount">1,009 properties</h2>
+
+              <p id="resultLocation">in Gurgaon</p>
+
+            </div>
+
+            <label class="sort-control">
+
+              <span>Sort by</span>
+
+              <span class="sort-select-wrap">
+
+                <select id="sortBy" aria-label="Sort results">
+
+                  <option value="recommended">Recommended</option>
+
+                  <option value="price-low">Price: Low to High</option>
+
+                  <option value="price-high">Price: High to Low</option>
+
+                  <option value="area-high">Largest Area</option>
+
+                  <option value="price-per-area-low">Lowest ₹/sq.ft.</option>
+
+                  <option value="value">Highest Value Gain</option>
+
+                </select>
+
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="m6 9 6 6 6-6" />
+
+                </svg>
+
+              </span>
+
+            </label>
+
+          </div>
+
+
+
+          <div class="active-filter-chips" id="activeFilterChips" aria-label="Active filters"></div>
+
+          <div class="property-grid" id="propertyGrid"></div>
+
+
+
+          <nav class="pagination" aria-label="Property result pages">
+
+            <button type="button" class="page-previous" id="prevPage" disabled>
+
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <path d="M20 12H5M11 6l-6 6 6 6" />
+
+              </svg>
+
+              Previous
+
+            </button>
+
+            <div class="page-numbers" id="pageNumbers">
+
+              <button type="button" data-page="1" class="active" aria-current="page">1</button>
+
+              <button type="button" data-page="2">2</button>
+
+              <button type="button" data-page="3">3</button>
+
+              <button type="button" data-page="4">4</button>
+
+              <button type="button" data-page="5">5</button>
+
+              <span class="page-ellipsis">...</span>
+
+              <button type="button" data-page="85">85</button>
+
+            </div>
+
+            <button type="button" class="page-next" id="nextPage">
+
+              Next
+
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <path d="M4 12h15M13 6l6 6-6 6" />
+
+              </svg>
+
+            </button>
+
+          </nav>
+
+        </section>
+
+      </main>
+
+
+
+      <!-- Modal mount point -->
+
+      <div id="modalRoot"></div>
+
+    </div>
+
+
+
+    <script src="/js/city_localities.js?v=autocomplete-fix-20261016"></script>
+
+    <script src="/js/search.js?v=autocomplete-fix-20261016"></script>
+    <script src="/js/account.js?v=layout-fix-20261013"></script>
+
+  </body>
+
+</html>

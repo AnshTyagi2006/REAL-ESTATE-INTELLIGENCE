@@ -1,0 +1,41 @@
+{
+  "input": {
+    "rows": 13761,
+    "columns": 114
+  },
+  "area_augmentation": {
+    "records_added_from_validated_min_max": 4149
+  },
+  "training_dataset": {
+    "rows": 7222,
+    "columns": 14,
+    "coverage_percent": 52.48
+  },
+  "prediction_readiness": {
+    "total_properties": 13761,
+    "has_price": 7222,
+    "has_area": 13761,
+    "has_location": 13761,
+    "has_bedrooms": 7222,
+    "has_bathrooms": 13761,
+    "has_coordinates": 13759,
+    "core_prediction_features_available": 7222,
+    "training_eligible": 7222
+  },
+  "validation": {
+    "duplicate_property_ids": 0,
+    "duplicate_listing_ids": 0,
+    "invalid_prices": 0,
+    "invalid_areas": 0
+  },
+  "model_target": {
+    "target": "asking_price_inr",
+    "transformed_target": "log_asking_price"
+  },
+  "excluded_from_predictors": [
+    "asking_price_inr",
+    "log_asking_price",
+    "source_price_per_sqft",
+    "calculated_price_per_sqft"
+  ]
+}

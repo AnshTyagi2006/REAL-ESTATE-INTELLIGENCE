@@ -1,0 +1,84 @@
+{
+  "city": "Faridabad",
+  "source": "99acres",
+  "source_extraction_report": "faridabad_99acres_extraction_report_2026-09-18T05-02-05-156Z.json",
+  "source_raw_file": "faridabad_99acres_raw_individual_properties_2026-09-18T05-02-05-156Z.json",
+  "extracted_at": "2026-09-18T05:02:05.156Z",
+  "raw_records": 604,
+  "unique_records": 604,
+  "duplicates_removed": 0,
+  "structurally_removed": 1,
+  "model_ready_records": 603,
+  "valuation_training_eligible": 486,
+  "retained_flagged_records": 117,
+  "removed_reason_counts": {
+    "area_below_300": 1
+  },
+  "flag_counts": {
+    "extreme_area_high": 8,
+    "extreme_ppsf_high": 92,
+    "bhk_area_mismatch": 17
+  },
+  "price_inr_stats": {
+    "min": 4200000.0,
+    "median": 20000000.0,
+    "max": 80000000.0
+  },
+  "area_sqft_stats": {
+    "min": 400.0,
+    "median": 2000.0,
+    "max": 28800.000000002878
+  },
+  "price_per_sqft_stats": {
+    "min": 5137.0,
+    "median": 82000.0,
+    "max": 158150.0
+  },
+  "bhk_counts": {
+    "2": 28,
+    "3": 330,
+    "4": 234,
+    "5": 11
+  },
+  "property_type_counts": {
+    "Residential Apartment": 108,
+    "Builder Floor": 491,
+    "Triplex Builder Floor": 5
+  },
+  "area_basis_counts": {
+    "SUPER": 314,
+    "CARPET": 206,
+    "SUPERBUILTUP": 70,
+    "BUILTUP": 13
+  },
+  "top_localities": {
+    "Sector 85, Faridabad": 129,
+    "Sector 89, Faridabad": 74,
+    "Greenfield Colony, Faridabad": 51,
+    "Sector 88, Faridabad": 50,
+    "Sector 77, Faridabad": 35,
+    "Sector 81, Faridabad": 23,
+    "Sector 28, Faridabad": 20,
+    "Sector 86, Faridabad": 19,
+    "Sector 16, Faridabad": 16,
+    "Sector 70, Faridabad": 16,
+    "Sector 84, Faridabad": 14,
+    "Surajkund, Faridabad": 12,
+    "Block E Sector 85, Faridabad": 11,
+    "Sainik Colony, Faridabad": 10,
+    "Sector 78, Faridabad": 9,
+    "Greenfield Colony Block B, Faridabad": 9,
+    "Sector 37, Faridabad": 8,
+    "Sector 98, Faridabad": 8,
+    "Sector 21C, Faridabad": 8,
+    "Sector 31, Faridabad": 7
+  },
+  "cleaning_rules": [
+    "Deduplicate by listing_id/PROP_ID.",
+    "Prefer explicit *_SQFT fields, including SUPER_SQFT, over MIN/MAX_AREA_SQFT secondary-unit values.",
+    "Remove nonpositive price/area, invalid BHK (>10 or <=0), invalid coordinates, and area below 300 sqft.",
+    "Retain large/high-value properties but flag extreme area and price-per-sqft values.",
+    "Flag BHK-area mismatch for review.",
+    "Preserve carpet/built-up/super-built-up area basis for valuation normalization."
+  ]
+}

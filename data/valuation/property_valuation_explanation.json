@@ -1,0 +1,59 @@
+{
+    "property": {
+        "property_id": "RE-00000001",
+        "city": "Bangalore East",
+        "locality": "Budigere Cross, Bangalore"
+    },
+    "valuation": {
+        "ml_value": 27207884.374577794,
+        "comparable_value": 27360872.05966724,
+        "locality_value": 26893294.001932625,
+        "estimated_fair_value": 27142234.496205017
+    },
+    "asking_price_analysis": {
+        "asking_price": 30000000.0,
+        "difference": 2857765.503794983,
+        "difference_pct": 10.528851278602543,
+        "signal": "Moderate premium"
+    },
+    "evidence": {
+        "top_comparables": [
+            {
+                "property_id": "RE-00000239",
+                "locality": "Budigere Cross, Bangalore",
+                "area_sqft": 1907.0,
+                "asking_price": 28800000.0,
+                "distance_km": 1.8940503439432224
+            },
+            {
+                "property_id": "RE-00000866",
+                "locality": "Budigere Cross, Bangalore",
+                "area_sqft": 1790.0,
+                "asking_price": 19900000.0,
+                "distance_km": 0.8544647489312195
+            },
+            {
+                "property_id": "RE-00000127",
+                "locality": "Budigere Cross, Bangalore",
+                "area_sqft": 1743.0,
+                "asking_price": 25000000.0,
+                "distance_km": 0.5175749515241794
+            },
+            {
+                "property_id": "RE-00000070",
+                "locality": "Budigere Cross, Bangalore",
+                "area_sqft": 2027.0,
+                "asking_price": 28500000.0,
+                "distance_km": 1.8940503439432224
+            },
+            {
+                "property_id": "RE-00000324",
+                "locality": "Budigere Cross, Bangalore",
+                "area_sqft": 2027.0,
+                "asking_price": 28378000.0,
+                "distance_km": 1.8940503439432224
+            }
+        ]
+    },
+    "interpretation": "The asking price is 10.53% above the calibrated estimated value. The final estimate combines the ML, comparable-property, and locality-market signals."
+}

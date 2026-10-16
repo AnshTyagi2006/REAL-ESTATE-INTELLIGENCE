@@ -1,0 +1,25 @@
+{
+    "validation_type": "unseen_locality_grouped_validation",
+    "total_properties": 7222,
+    "model_ready_properties": 7222,
+    "training_properties": 6097,
+    "testing_properties": 1125,
+    "training_localities": 745,
+    "testing_localities": 187,
+    "locality_overlap": 0,
+    "mae_inr": 15105073.764575765,
+    "rmse_inr": 39859023.60226754,
+    "r2": 0.6431905661122308,
+    "mean_absolute_percentage_error": 24.091799707892687,
+    "median_absolute_percentage_error": 18.67327767052047,
+    "mean_prediction_error_inr": -5163876.438898969,
+    "hyperparameters": {
+        "n_estimators": 500,
+        "learning_rate": 0.1,
+        "num_leaves": 70,
+        "min_child_samples": 20,
+        "subsample": 0.7,
+        "colsample_bytree": 0.7,
+        "random_state": 42
+    }
+}

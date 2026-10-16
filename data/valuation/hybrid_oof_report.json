@@ -1,0 +1,34 @@
+{
+    "ML OOF": {
+        "n": 3009,
+        "mae_inr": 5895765.815598004,
+        "rmse_inr": 15241035.327173635,
+        "mean_absolute_pct": 13.89893784375648,
+        "median_absolute_pct": 9.213092332044596,
+        "mean_prediction_error_inr": -776838.8787375143
+    },
+    "Comparable": {
+        "n": 2913,
+        "mae_inr": 6483530.449522356,
+        "rmse_inr": 13289705.711603988,
+        "mean_absolute_pct": 18.204668857550352,
+        "median_absolute_pct": 11.084284460052666,
+        "mean_prediction_error_inr": -266394.90794881625
+    },
+    "Locality": {
+        "n": 2803,
+        "mae_inr": 6774422.293594035,
+        "rmse_inr": 15906071.134264624,
+        "mean_absolute_pct": 17.08060017754753,
+        "median_absolute_pct": 10.0,
+        "mean_prediction_error_inr": -538981.6488234164
+    },
+    "Hybrid V1": {
+        "n": 2724,
+        "mae_inr": 5367389.405077371,
+        "rmse_inr": 10367515.15676943,
+        "mean_absolute_pct": 14.42945118260388,
+        "median_absolute_pct": 9.064609708082223,
+        "mean_prediction_error_inr": -350690.42182799935
+    }
+}

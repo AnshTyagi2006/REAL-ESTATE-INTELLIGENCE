@@ -1,0 +1,291 @@
+{
+  "city": "Hyderabad",
+  "source": "99acres",
+  "source_url": "https://www.99acres.com/flats-in-hyderabad-ffid",
+  "extracted_at": "2026-09-17T06:36:37.601Z",
+  "pages_with_data": 70,
+  "pages_without_data": 0,
+  "failed_pages": [
+    {
+      "page": 71,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-71",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 72,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-72",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 73,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-73",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 74,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-74",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 75,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-75",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 76,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-76",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 77,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-77",
+      "error": "HTTP 410"
+    },
+    {
+      "page": 78,
+      "url": "https://www.99acres.com/flats-in-hyderabad-ffid-page-78",
+      "error": "HTTP 410"
+    }
+  ],
+  "total_raw_records": 1752,
+  "total_individual_records_seen": 1383,
+  "unique_properties": 1383,
+  "duplicates_removed": 0,
+  "project_records_skipped": 369,
+  "property_types": {
+    "Residential Apartment": 1376,
+    "Duplex Residential Apartment": 5,
+    "Penthouse": 2
+  },
+  "bhk_distribution": {
+    "1": 12,
+    "2": 431,
+    "3": 817,
+    "4": 116,
+    "5": 5,
+    "10": 1,
+    "20": 1
+  },
+  "area_types": {
+    "SUPERBUILTUP_AREA": 904,
+    "CARPET_AREA": 301,
+    "BUILTUP_AREA": 178
+  },
+  "ready_to_move": 1269,
+  "under_construction": 218,
+  "resale": 1381,
+  "new_booking": 2,
+  "rera_tagged": 1383,
+  "field_coverage": {
+    "property_id": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "property_type": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "city": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "locality": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "society": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "price": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "area": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "price_per_sqft": {
+      "count": 0,
+      "percentage": 0
+    },
+    "bedrooms": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "bathrooms": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "balconies": {
+      "count": 1361,
+      "percentage": 98.41
+    },
+    "floor": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "total_floors": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "furnishing": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "age": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "facing": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "parking": {
+      "count": 0,
+      "percentage": 0
+    },
+    "coordinates": {
+      "count": 0,
+      "percentage": 0
+    },
+    "rera": {
+      "count": 0,
+      "percentage": 0
+    },
+    "description": {
+      "count": 1383,
+      "percentage": 100
+    },
+    "seller": {
+      "count": 0,
+      "percentage": 0
+    },
+    "seller_type": {
+      "count": 0,
+      "percentage": 0
+    }
+  },
+  "top_localities": [
+    {
+      "locality": "Narsingi, Hyderabad",
+      "count": 135
+    },
+    {
+      "locality": "Kondapur, Hyderabad",
+      "count": 85
+    },
+    {
+      "locality": "Puppalaguda, Hyderabad",
+      "count": 75
+    },
+    {
+      "locality": "Tellapur, Hyderabad",
+      "count": 66
+    },
+    {
+      "locality": "Bachupally, Hyderabad",
+      "count": 59
+    },
+    {
+      "locality": "Miyapur, Hyderabad",
+      "count": 57
+    },
+    {
+      "locality": "Kokapet, Hyderabad",
+      "count": 46
+    },
+    {
+      "locality": "Manikonda, Hyderabad",
+      "count": 46
+    },
+    {
+      "locality": "Hi Tech City, Hyderabad",
+      "count": 44
+    },
+    {
+      "locality": "Nallagandla, Hyderabad",
+      "count": 37
+    },
+    {
+      "locality": "Gachibowli, Hyderabad",
+      "count": 34
+    },
+    {
+      "locality": "Financial District, Hyderabad",
+      "count": 32
+    },
+    {
+      "locality": "Kompally, Hyderabad",
+      "count": 25
+    },
+    {
+      "locality": "Qutbullapur, Hyderabad",
+      "count": 22
+    },
+    {
+      "locality": "Kollur, Hyderabad",
+      "count": 21
+    },
+    {
+      "locality": "Chandanagar, Hyderabad",
+      "count": 15
+    },
+    {
+      "locality": "Suchitra, Hyderabad",
+      "count": 13
+    },
+    {
+      "locality": "Kukatpally, Hyderabad",
+      "count": 13
+    },
+    {
+      "locality": "Nizampet, Hyderabad",
+      "count": 13
+    },
+    {
+      "locality": "Adibatla, Hyderabad",
+      "count": 12
+    },
+    {
+      "locality": "Attapur, Hyderabad",
+      "count": 11
+    },
+    {
+      "locality": "Gajulramaram, Hyderabad",
+      "count": 11
+    },
+    {
+      "locality": "Rajendra Nagar, Hyderabad",
+      "count": 11
+    },
+    {
+      "locality": "Osman Nagar, Tellapur",
+      "count": 11
+    },
+    {
+      "locality": "Jeedimetla, Hyderabad",
+      "count": 11
+    },
+    {
+      "locality": "Patancheru, Hyderabad",
+      "count": 10
+    },
+    {
+      "locality": "Nanakramguda, Hyderabad",
+      "count": 10
+    },
+    {
+      "locality": "Pragathi Nagar, Hyderabad",
+      "count": 10
+    },
+    {
+      "locality": "Mallampet, Bachupally",
+      "count": 10
+    },
+    {
+      "locality": "Kismathpur, Hyderabad",
+      "count": 9
+    }
+  ]
+}

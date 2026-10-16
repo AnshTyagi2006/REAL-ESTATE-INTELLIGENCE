@@ -1,0 +1,13 @@
+{
+    "property_id": "RE-00000001",
+    "city": "Bangalore East",
+    "locality": "Budigere Cross, Bangalore",
+    "asking_price_inr": 30000000.0,
+    "ml_value": 25426315.495377645,
+    "comparable_value": 27360872.05966724,
+    "locality_value": 26893294.001932625,
+    "final_estimated_value": 25958303.42433901,
+    "asking_price_premium_pct": 15.569956593817357,
+    "comparable_count": 7,
+    "locality_property_count": 12
+}

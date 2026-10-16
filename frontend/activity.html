@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071827">
+  <title>My Activity | Real Estate Intelligence</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/activity.css">
+</head>
+<body class="activity-page-shell">
+  <header class="site-header activity-header">
+    <a href="/home" class="brand" aria-label="Real Estate Intelligence home">
+      <span class="brand-mark">RE</span><span>Real Estate Intelligence</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/home">Home</a><a href="/search">Properties</a><a href="/market">Market Insights</a>
+    </nav>
+    <div class="activity-header-actions">
+      <button id="activity-theme-toggle" class="activity-theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+        <span class="theme-sun" aria-hidden="true">☼</span><span class="theme-moon" aria-hidden="true">☾</span>
+      </button>
+      <a class="activity-explore" href="/search">Explore <span aria-hidden="true">↗</span></a>
+      <a class="activity-avatar" href="/activity?tab=profile" aria-label="Modify profile">A</a>
+    </div>
+  </header>
+
+  <main class="activity-page">
+    <section class="activity-hero container">
+      <div class="activity-hero-copy">
+        <span class="activity-eyebrow"><span></span> YOUR ACCOUNT</span>
+        <h1>Your property journey,<br><em>all in one place.</em></h1>
+        <p>Keep track of the homes you explored, searches you made, and properties you want to revisit.</p>
+      </div>
+      <div class="activity-hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-building building-one"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="art-building building-two"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="art-ground"></div><span class="art-glow"></span>
+      </div>
+    </section>
+
+    <section class="container activity-workspace">
+      <div class="activity-tabs-wrap">
+        <div class="activity-tabs" role="tablist" aria-label="Account activity">
+          <button data-tab="overview" role="tab">Overview</button>
+          <button data-tab="searches" role="tab">Recent searches</button>
+          <button data-tab="viewed" role="tab">Recently viewed</button>
+          <button data-tab="shortlisted" role="tab">Shortlisted</button>
+          <button data-tab="profile" role="tab">Modify profile</button>
+          <button data-tab="password" role="tab">Change password</button>
+        </div>
+      </div>
+      <div id="activity-status" class="activity-status" role="status" aria-live="polite">Loading your activity…</div>
+      <section id="activity-content" class="activity-content" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <footer class="activity-footer"><div class="container"><a href="/home" class="footer-brand">RE <span>Real Estate Intelligence</span></a><span>Your property journey, thoughtfully organized.</span><a href="/search">Explore properties ↗</a></div></footer>
+  <script src="/js/activity.js?v=search-card-profile-fix-20261015"></script>
+  <script src="/js/account.js?v=search-card-profile-fix-20261015"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "raw_records": 1052,
+  "unique_prop_ids": 1052,
+  "duplicates_removed": 0,
+  "structurally_removed": 11,
+  "final_model_ready_records": 1041,
+  "valuation_training_eligible_records": 1041,
+  "flag_counts": {},
+  "price_inr": {
+    "min": 4500000.0,
+    "median": 16500000.0,
+    "max": 400000000.0
+  },
+  "price_per_sqft": {
+    "min": 4900.0,
+    "median": 12318.0,
+    "max": 72000.0
+  },
+  "area_sqft": {
+    "min": 457.0,
+    "median": 1369.1,
+    "max": 7500.0
+  },
+  "bhk_distribution": {
+    "1": 24,
+    "2": 432,
+    "3": 496,
+    "4": 85,
+    "5": 3,
+    "13": 1
+  },
+  "property_type_distribution": {
+    "Residential Apartment": 1039,
+    "Duplex Residential Apartment": 2
+  },
+  "area_basis_distribution": {
+    "SUPERBUILTUP_AREA": 755,
+    "BUILTUP_AREA": 207,
+    "CARPET_AREA": 79
+  },
+  "status": {
+    "ready_to_move": 937,
+    "under_construction": 102,
+    "resale": 1041
+  },
+  "top_localities": {
+    "Whitefield, Bangalore": 77,
+    "Varthur, Bangalore": 41,
+    "Sarjapur Road, Bangalore": 38,
+    "Thanisandra, Bangalore": 32,
+    "Thanisandra Main Road, Bangalore North": 25,
+    "Bagalur, Bangalore": 22,
+    "Panathur, Bangalore": 21,
+    "Budigere Cross, Bangalore": 21,
+    "Devanahalli, Bangalore": 20,
+    "Gunjur, Near Varthur, Bangalore": 19,
+    "Electronic City, Bangalore": 19,
+    "Hosahalli, Bangalore North": 17,
+    "Begur, Bangalore": 17,
+    "Yelahanka, Bangalore": 16,
+    "Vajarahalli, Bangalore": 15,
+    "Electronics City Phase 1, Bangalore": 15,
+    "Hennur Road, Bangalore": 14,
+    "Kodathi, Near Sarjapur Road, Bangalore": 14,
+    "Hebbal, Bangalore": 13,
+    "Chokkanahalli, Near Thanisandra, Bangalore": 13,
+    "Electronic City Phase 2, Bangalore": 12,
+    "Singasandra, Hosur Road": 11,
+    "Kanakapura Road, Bangalore": 11,
+    "Kudlu Gate, Bangalore": 11,
+    "Bommenahalli, Near Budigere, Bangalore": 11,
+    "Kammasandra, Electronic City": 10,
+    "Doddakannelli, Sarjapur Road": 10,
+    "Hoodi, Bangalore": 10,
+    "Sarjapur, Bangalore": 9,
+    "Uttarahalli, Bangalore": 9
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "target_property_id": "RE-00000001",
+    "target_city": "Bangalore East",
+    "target_locality": "Budigere Cross, Bangalore",
+    "target_area_sqft": 1907.6,
+    "current_asking_price": 30000000.0,
+    "signals": {
+        "comparable_value": 27360872.05966724,
+        "locality_value": 26965374.387683693,
+        "ml_value": 25426315.495377645
+    },
+    "weights": {
+        "comparable": 0.45,
+        "locality": 0.35,
+        "ml": 0.2
+    },
+    "hybrid": {
+        "central_estimate": 26835536.561615083,
+        "ppsf": 14067.695828064105,
+        "range_low": 26763806.808090772,
+        "range_high": 28615877.38132622
+    },
+    "agreement": {
+        "comparable_locality_diff_pct": 1.4560095638738275,
+        "comparable_ml_diff_pct": 7.329644384907979,
+        "locality_ml_diff_pct": 5.875202329763518,
+        "signal_spread_pct": 7.277094994185244,
+        "agreement_level": "MODERATE"
+    },
+    "asking_price_analysis": {
+        "asking_vs_hybrid_pct": 11.79206322601088,
+        "asking_vs_comparable_pct": 9.645628014258753,
+        "asking_vs_locality_pct": 11.253786313837931,
+        "asking_vs_ml_pct": 17.987995568818548,
+        "asking_vs_locality_median_ppsf_pct": 12.332624389659408
+    },
+    "evidence": {
+        "comparable_strength": "STRONG",
+        "locality_strength": "STRONG",
+        "overall_strength": "STRONG"
+    },
+    "note": "Asking-price-based valuation signal; not a verified transaction-price valuation."
+}

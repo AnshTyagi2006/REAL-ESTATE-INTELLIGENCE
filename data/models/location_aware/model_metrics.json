@@ -1,0 +1,18 @@
+{
+    "model": "RandomForestRegressor",
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "target": "log_asking_price",
+    "prediction_target": "asking_price_inr",
+    "train_rows": 5777,
+    "test_rows": 1445,
+    "training_localities": 849,
+    "unseen_test_locality_records": 91,
+    "mae_inr": 6972620.076155325,
+    "rmse_inr": 19838363.34603163,
+    "r2": 0.8436941503796966,
+    "mean_absolute_percentage_error": 15.173710324721469,
+    "median_absolute_percentage_error": 8.42326631791687,
+    "mean_prediction_error_inr": -1412960.1655912388
+}
