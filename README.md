@@ -16,7 +16,7 @@
 
 <br>
 
-### 🌐 [**Open Live Website →**](YOUR_UNIVERSAL_DEPLOYMENT_URL)
+### 🌐 [**Open Live Website →**](https://real-estate-intelligence.onrender.com/)
 
 </div>
 
